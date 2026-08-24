@@ -612,6 +612,13 @@ function containsAny(text,list){
     return list.some(function(word){
         return text.includes(word);
     });
+if (score < 40) {
+    verdict = "✅ LOW RECRUITMENT RISK";
+} else if (score < 70) {
+    verdict = "⚠️ MEDIUM RECRUITMENT RISK";
+} else {
+    verdict = "🚨 HIGH RECRUITMENT RISK";
+}
 
 }
 
