@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
 <meta name="description"
-content="DruVictor'X' Royal Verifier - Recruitment advertisement and website risk assessment system.">
+content="DruVictor'X' Royal Verifier - Multilingual recruitment advertisement risk assessment system.">
 
 <meta name="keywords"
-content="DruVictor'X, Royal Verifier, job verification, recruitment safety, safe migration">
+content="DruVictor'X, Royal Verifier, job verification, recruitment safety, English Hindi Telugu Romanized">
 
-<meta name="author" content="Hananya Krishna">
+<meta name="author"
+content="Hananya Krishna">
 
 <title>DruVictor'X' Royal Verifier</title>
+
 
 <style>
 
@@ -64,8 +69,9 @@ header{
     border:1px solid #66521f;
     padding:11px;
     border-radius:8px;
-    width:230px;
+    width:250px;
 }
+
 
 /* =========================================================
    CONTAINER
@@ -84,6 +90,7 @@ header{
     padding:28px;
     box-shadow:0 20px 60px #000;
 }
+
 
 /* =========================================================
    MODES
@@ -118,8 +125,10 @@ header{
         #f1d05b,
         #b68a20
     );
+
     color:#050505;
 }
+
 
 /* =========================================================
    TEXT
@@ -134,41 +143,59 @@ h2{
     line-height:1.7;
 }
 
+
 /* =========================================================
-   INPUTS
+   INPUT
 ========================================================= */
 
 input,
 textarea{
+
     width:100%;
+
     background:#050505;
+
     color:#f1e4bd;
+
     border:1px solid #5d491b;
+
     border-radius:9px;
+
     padding:16px;
+
     margin:12px 0;
+
     font:inherit;
+
     outline:none;
 }
 
 textarea{
+
     height:250px;
+
     resize:vertical;
 }
 
 input:focus,
 textarea:focus{
+
     border-color:#d4af37;
 }
+
 
 /* =========================================================
    BUTTON
 ========================================================= */
 
 .verify{
+
     width:100%;
+
     padding:17px;
+
     border:0;
+
     border-radius:9px;
 
     background:linear-gradient(
@@ -179,14 +206,20 @@ textarea:focus{
     );
 
     color:#050505;
+
     font-weight:800;
+
     cursor:pointer;
+
     font-size:15px;
 }
 
 .verify:hover{
+
     filter:brightness(1.1);
+
 }
+
 
 /* =========================================================
    RESULT
@@ -197,40 +230,62 @@ textarea:focus{
 }
 
 .result{
+
     display:none;
+
     margin-top:25px;
+
     padding:25px;
+
     border-radius:15px;
 }
 
 .result.safe{
+
     background:#07150b;
+
     border:1px solid #3d9b5b;
 }
 
 .result.warn{
+
     background:#211603;
+
     border:1px solid #d69a22;
 }
 
 .result.danger{
+
     background:#210806;
+
     border:1px solid #d64032;
 }
 
 .result.info{
+
     background:#101318;
+
     border:1px solid #64748b;
 }
 
 .result.gov{
+
     background:#07150c;
+
     border:1px solid #36a86b;
 }
 
+
+/* =========================================================
+   STATUS
+========================================================= */
+
 .status{
+
     text-align:center;
+
     font-size:24px;
+
     font-weight:800;
 }
 
@@ -254,111 +309,166 @@ textarea:focus{
     color:#4de095;
 }
 
+
+/* =========================================================
+   SCORE
+========================================================= */
+
 .score{
+
     text-align:center;
+
     font-size:46px;
+
     font-weight:800;
+
     margin:15px;
 }
 
+
 /* =========================================================
-   INFORMATION
+   INFO
 ========================================================= */
 
 .infoRow{
+
     border-bottom:1px solid #29210d;
+
     padding:13px 0;
 }
 
 .label{
+
     color:#857653;
+
     font-size:11px;
+
     text-transform:uppercase;
 }
 
 .value{
+
     color:#eee0b5;
+
     font-weight:700;
+
     margin-top:5px;
 }
+
 
 /* =========================================================
    INDICATORS
 ========================================================= */
 
 .indicator{
+
     padding:10px;
+
     margin:7px 0;
+
     border-radius:7px;
+
     font-weight:700;
 }
 
 .indicator.high{
+
     color:#ff6b60;
+
     background:#300b08;
 }
 
 .indicator.medium{
+
     color:#ffd34d;
+
     background:#302305;
 }
 
 .indicator.low{
+
     color:#55e884;
+
     background:#092616;
 }
+
 
 /* =========================================================
    ACTIONS
 ========================================================= */
 
 .actions{
+
     display:flex;
+
     gap:10px;
+
     margin-top:25px;
 }
 
 .actions a{
+
     flex:1;
+
     padding:15px;
+
     border-radius:9px;
+
     text-align:center;
+
     text-decoration:none;
+
     font-weight:800;
 }
 
 .emigrate{
+
     background:#d4af37;
+
     color:#050505;
 }
 
 .report{
+
     background:#42140f;
+
     color:#f0dca5;
 }
+
 
 /* =========================================================
    NOTE
 ========================================================= */
 
 .note{
+
     text-align:center;
+
     color:#807250;
+
     font-size:11px;
+
     line-height:1.7;
+
     margin-top:20px;
 }
+
 
 /* =========================================================
    FOOTER
 ========================================================= */
 
 footer{
+
     text-align:center;
+
     padding:35px;
+
     color:#665522;
+
     font-size:11px;
 }
+
 
 /* =========================================================
    MOBILE
@@ -368,20 +478,27 @@ footer{
 
     .modes,
     .actions{
+
         flex-direction:column;
+
     }
 
     .logo{
+
         font-size:34px;
+
     }
 
     .card{
+
         padding:20px;
+
     }
 
 }
 
 </style>
+
 </head>
 
 
@@ -394,33 +511,40 @@ footer{
 
 <header>
 
-    <div class="logo">
-        DruVictor'X'
-    </div>
+<div class="logo">
+DruVictor'X'
+</div>
 
-    <div class="tag">
-        ROYAL VERIFIER • SAFE MIGRATION
-    </div>
 
-    <div class="author">
-        By Hananya Krishna
-    </div>
+<div class="tag">
+ROYAL VERIFIER • SAFE MIGRATION
+</div>
 
-    <select id="language">
 
-        <option value="en">
-            🇮🇳 English
-        </option>
+<div class="author">
+By Hananya Krishna
+</div>
 
-        <option value="hi">
-            🇮🇳 हिन्दी
-        </option>
 
-        <option value="te">
-            🇮🇳 తెలుగు
-        </option>
+<select id="language">
 
-    </select>
+<option value="auto">
+🌐 Automatic Language Detection
+</option>
+
+<option value="en">
+🇬🇧 English
+</option>
+
+<option value="hi">
+🇮🇳 हिन्दी
+</option>
+
+<option value="te">
+🇮🇳 తెలుగు
+</option>
+
+</select>
 
 </header>
 
@@ -435,101 +559,105 @@ footer{
 
 
 <!-- =====================================================
-     MODE BUTTONS
+     MODES
 ===================================================== -->
 
 <div class="modes">
 
-    <button
-        id="websiteMode"
-        class="mode active">
+<button
+id="websiteMode"
+class="mode active">
 
-        🔗 CHECK WEBSITE
+🔗 CHECK WEBSITE
 
-    </button>
+</button>
 
 
-    <button
-        id="adMode"
-        class="mode">
+<button
+id="adMode"
+class="mode">
 
-        📄 VERIFY ADVERTISEMENT
+📄 VERIFY ADVERTISEMENT
 
-    </button>
+</button>
 
 </div>
 
 
 <!-- =====================================================
-     WEBSITE SECTION
+     WEBSITE
 ===================================================== -->
 
 <section id="websiteSection">
 
-    <h2>
-        🔎 Check Job Website
-    </h2>
-
-    <p class="description">
-
-        Enter a website URL. DruVictor'X' checks the
-        domain structure and identifies whether it
-        follows the Indian government <b>.gov.in</b>
-        domain format.
-
-    </p>
-
-    <input
-        id="websiteURL"
-        type="text"
-        placeholder="https://example.com">
+<h2>
+🔎 Check Job Website
+</h2>
 
 
-    <button
-        type="button"
-        class="verify"
-        id="websiteButton">
+<p class="description">
 
-        🔐 CHECK WEBSITE
+Enter a website URL. DruVictor'X' checks
+the domain structure and identifies whether
+it follows the Indian government
+<b>.gov.in</b> domain format.
 
-    </button>
+</p>
+
+
+<input
+id="websiteURL"
+type="text"
+placeholder="https://example.com">
+
+
+<button
+type="button"
+class="verify"
+id="websiteButton">
+
+🔐 CHECK WEBSITE
+
+</button>
 
 </section>
 
 
 <!-- =====================================================
-     ADVERTISEMENT SECTION
+     ADVERTISEMENT
 ===================================================== -->
 
 <section
-    id="advertisementSection"
-    class="hidden">
+id="advertisementSection"
+class="hidden">
 
-    <h2>
-        📄 Verify Job Advertisement
-    </h2>
-
-    <p class="description">
-
-        Paste the complete job advertisement.
-        DruVictor'X' performs offline recruitment-risk
-        analysis using multilingual detection rules.
-
-    </p>
-
-    <textarea
-        id="advertisementText"
-        placeholder="Paste the complete job advertisement here..."></textarea>
+<h2>
+📄 Verify Job Advertisement
+</h2>
 
 
-    <button
-        type="button"
-        class="verify"
-        id="advertisementButton">
+<p class="description">
 
-        🔐 VERIFY ADVERTISEMENT
+Paste the complete job advertisement.
+The engine supports English, Hindi,
+Telugu, Romanized Hindi and Romanized Telugu.
 
-    </button>
+</p>
+
+
+<textarea
+id="advertisementText"
+placeholder="Paste the complete job advertisement here..."></textarea>
+
+
+<button
+type="button"
+class="verify"
+id="advertisementButton">
+
+🔐 VERIFY ADVERTISEMENT
+
+</button>
 
 </section>
 
@@ -538,24 +666,29 @@ footer{
      RESULT
 ===================================================== -->
 
-<div id="result" class="result"></div>
+<div
+id="result"
+class="result">
+
+</div>
 
 
 </div>
+
 </div>
 
 
 <footer>
 
-    DruVictor'X' © 2026
+DruVictor'X' © 2026
 
-    <br><br>
+<br><br>
 
-    Science & Innovation for Sustainability
+Science & Innovation for Sustainability
 
-    <br>
+<br>
 
-    Application of Indian Knowledge Systems for Sustainability
+Application of Indian Knowledge Systems for Sustainability
 
 </footer>
 
@@ -570,293 +703,528 @@ footer{
 ========================================================= */
 
 const websiteMode =
-    document.getElementById("websiteMode");
+document.getElementById("websiteMode");
 
 const adMode =
-    document.getElementById("adMode");
+document.getElementById("adMode");
 
 const websiteSection =
-    document.getElementById("websiteSection");
+document.getElementById("websiteSection");
 
 const advertisementSection =
-    document.getElementById("advertisementSection");
+document.getElementById("advertisementSection");
 
 const websiteButton =
-    document.getElementById("websiteButton");
+document.getElementById("websiteButton");
 
 const advertisementButton =
-    document.getElementById("advertisementButton");
+document.getElementById("advertisementButton");
 
 const websiteURL =
-    document.getElementById("websiteURL");
+document.getElementById("websiteURL");
 
 const advertisementText =
-    document.getElementById("advertisementText");
+document.getElementById("advertisementText");
 
 const result =
-    document.getElementById("result");
+document.getElementById("result");
 
 const language =
-    document.getElementById("language");
+document.getElementById("language");
 
 
 /* =========================================================
-   MODE SWITCHING
+   MODE SWITCH
 ========================================================= */
 
-websiteMode.onclick = function(){
+websiteMode.onclick=function(){
 
-    websiteSection.classList.remove("hidden");
+websiteSection.classList.remove("hidden");
 
-    advertisementSection.classList.add("hidden");
+advertisementSection.classList.add("hidden");
 
-    websiteMode.classList.add("active");
+websiteMode.classList.add("active");
 
-    adMode.classList.remove("active");
+adMode.classList.remove("active");
 
-    result.style.display = "none";
+result.style.display="none";
 
 };
 
 
-adMode.onclick = function(){
+adMode.onclick=function(){
 
-    websiteSection.classList.add("hidden");
+websiteSection.classList.add("hidden");
 
-    advertisementSection.classList.remove("hidden");
+advertisementSection.classList.remove("hidden");
 
-    websiteMode.classList.remove("active");
+websiteMode.classList.remove("active");
 
-    adMode.classList.add("active");
+adMode.classList.add("active");
 
-    result.style.display = "none";
+result.style.display="none";
 
 };
 
 
 /* =========================================================
-   MULTILINGUAL RULE DATABASE
+   RULE DATABASE
 ========================================================= */
 
-const RULES = {
+const RULES={
 
 
-job: [
+/* ---------------------------------------------------------
+   JOB TERMS
+--------------------------------------------------------- */
 
-    "job",
-    "employment",
-    "salary",
-    "hiring",
-    "vacancy",
-    "recruitment",
-    "work from home",
-    "data entry",
-    "career",
-    "position",
-    "job title",
+job:[
 
-    "नौकरी",
-    "रोजगार",
-    "वेतन",
-    "भर्ती",
-    "रिक्ति",
-    "काम",
-    "उपाधि",
+"job",
+"employment",
+"salary",
+"hiring",
+"vacancy",
+"recruitment",
+"work from home",
+"data entry",
+"career",
+"position",
+"job title",
 
-    "ఉద్యోగం",
-    "ఉపాధి",
-    "జీతం",
-    "నియామకం",
-    "ఖాళీ"
+"नौकरी",
+"रोजगार",
+"वेतन",
+"भर्ती",
+"रिक्ति",
+"काम",
 
-],
+"ఉద్యోగం",
+"ఉపాధి",
+"జీతం",
+"నియామకం",
+"ఖాళీ",
 
+/* Romanized Hindi */
 
-payment: [
+"naukri",
+"rojgar",
+"vetan",
+"bharti",
+"rikti",
+"kaam",
+"rozgaar",
 
-    "processing fee",
-    "registration fee",
-    "advance payment",
-    "security deposit",
-    "visa fee",
-    "joining fee",
-    "application fee",
-    "starter kit",
-    "background verification fee",
-    "background check fee",
-    "pay before",
-    "send money",
-    "payment required",
-    "pay a fee",
-    "pay fee",
-    "deposit money",
+/* Romanized Telugu */
 
-    "प्रोसेसिंग फीस",
-    "रजिस्ट्रेशन फीस",
-    "अग्रिम भुगतान",
-    "सिक्योरिटी डिपॉजिट",
-    "वीजा फीस",
-    "जॉइनिंग फीस",
-    "आवेदन शुल्क",
-    "पहले भुगतान",
-    "पैसे भेजें",
-    "शुल्क जमा",
-
-    "ప్రాసెసింగ్ ఫీజు",
-    "ముందస్తు చెల్లింపు",
-    "సెక్యూరిటీ డిపాజిట్",
-    "జాయినింగ్ ఫీజు",
-    "దరఖాస్తు రుసుము"
+"udyogam",
+"udyogam",
+"upadhi",
+"jeetham",
+"jitam",
+"niyamakham",
+"khali"
 
 ],
 
 
-experience: [
+/* ---------------------------------------------------------
+   PAYMENT
+--------------------------------------------------------- */
 
-    "no experience",
-    "no prior experience",
-    "no experience required",
-    "without experience",
-    "basic data entry",
-    "unskilled",
+payment:[
 
-    "अनुभव आवश्यक नहीं",
-    "बिना अनुभव",
-    "कोई अनुभव नहीं",
+"processing fee",
+"registration fee",
+"advance payment",
+"security deposit",
+"visa fee",
+"joining fee",
+"application fee",
+"starter kit",
+"background verification fee",
+"background check fee",
+"pay before",
+"send money",
+"payment required",
+"pay a fee",
+"pay fee",
+"deposit money",
 
-    "అనుభవం అవసరం లేదు",
-    "ముందస్తు అనుభవం అవసరం లేదు"
+"प्रोसेसिंग फीस",
+"रजिस्ट्रेशन फीस",
+"अग्रिम भुगतान",
+"सिक्योरिटी डिपॉजिट",
+"वीजा फीस",
+"जॉइनिंग फीस",
+"आवेदन शुल्क",
+"पहले भुगतान",
+"पैसे भेजें",
 
-],
+"ప్రాసెసింగ్ ఫీజు",
+"ముందస్తు చెల్లింపు",
+"సెక్యూరిటీ డిపాజిట్",
+"జాయినింగ్ ఫీజు",
+"దరఖాస్తు రుసుము",
 
+/* Romanized Hindi */
 
-urgency: [
+"processing fees",
+"registration fees",
+"registration fee jama",
+"registration fee bhare",
+"registration fee bharen",
+"advance payment",
+"suraksha jama",
+"security deposit jama",
+"visa fees",
+"joining fees",
+"application fees",
+"paise bheje",
+"paise bhejen",
+"paisa bheje",
+"paisa jama",
+"shulk jama",
+"fees jama karein",
+"fees jama kare",
+"paisa jama karein",
 
-    "urgent",
-    "apply today",
-    "limited seats",
-    "hurry",
-    "act now",
-    "start immediately",
-    "immediately",
-    "join immediately",
+/* Romanized Telugu */
 
-    "तुरंत",
-    "अभी आवेदन करें",
-    "जल्दी करें",
-    "तुरंत जॉइन करें",
-
-    "వెంటనే",
-    "తక్షణం"
-
-],
-
-
-messaging: [
-
-    "whatsapp only",
-    "telegram only",
-    "contact only on whatsapp",
-    "contact only on telegram",
-    "dm us",
-    "message us only",
-    "contact us on whatsapp",
-    "contact us on telegram",
-
-    "केवल व्हाट्सऐप",
-    "केवल टेलीग्राम",
-    "व्हाट्सऐप",
-    "टेलीग्राम",
-
-    "వాట్సాప్",
-    "టెలిగ్రామ్"
-
-],
-
-
-personal: [
-
-    "date of birth",
-    "home address",
-    "passport number",
-    "passport details",
-    "aadhaar",
-    "aadhar",
-    "bank account",
-    "bank details",
-    "credit card",
-    "debit card",
-    "pan card",
-    "pan number",
-
-    "जन्म तिथि",
-    "घर का पता",
-    "पासपोर्ट नंबर",
-    "आधार",
-    "बैंक विवरण",
-
-    "పుట్టిన తేదీ",
-    "ఇంటి చిరునామా",
-    "పాస్‌పోర్ట్ నంబర్",
-    "ఆధార్",
-    "బ్యాంక్ వివరాలు"
+"registration fee kattandi",
+"registration fee katti",
+"registration fees kattandi",
+"joining fee kattandi",
+"joining fees kattandi",
+"application fee kattandi",
+"fee kattandi",
+"fees kattandi",
+"dabbu kattandi",
+"dabbu chellinchandi",
+"dabbu pampandi",
+"mundastu chellimpu",
+"surakshita deposit",
+"deposit kattandi"
 
 ],
 
 
-danger: [
+/* ---------------------------------------------------------
+   EXPERIENCE
+--------------------------------------------------------- */
 
-    ".apk",
-    ".exe",
-    ".scr",
-    ".bat",
-    "download apk",
-    "download exe",
-    "disable antivirus",
-    "disable security",
-    "unknown software"
+experience:[
+
+"no experience",
+"no prior experience",
+"no experience required",
+"without experience",
+"basic data entry",
+"unskilled",
+
+"अनुभव आवश्यक नहीं",
+"बिना अनुभव",
+"कोई अनुभव नहीं",
+
+"అనుభవం అవసరం లేదు",
+"ముందస్తు అనుభవం అవసరం లేదు",
+
+/* Romanized Hindi */
+
+"anubhav nahi",
+"anubhav nahin",
+"koi anubhav nahi",
+"koi anubhav nahin",
+"bina anubhav",
+"anubhav ki zarurat nahi",
+"anubhav ki avashyakta nahi",
+"anubhav aavashyak nahi",
+
+/* Romanized Telugu */
+
+"anubhavam avasaram ledu",
+"anubhavam avasaramledu",
+"anubhavam akkarledu",
+"mundastu anubhavam avasaram ledu",
+"anubhavam avasaram ledu"
 
 ],
 
 
-review: [
+/* ---------------------------------------------------------
+   URGENCY
+--------------------------------------------------------- */
 
-    "5-star",
-    "5 star",
-    "five-star",
-    "five star",
-    "positive review",
-    "fake review",
-    "buy the product",
-    "purchase the product",
-    "review and earn",
-    "product review",
+urgency:[
 
-    "प्रोडक्ट खरीदें",
-    "5-स्टार",
-    "5 स्टार",
-    "प्रोडक्ट रिव्यू",
+"urgent",
+"apply today",
+"limited seats",
+"hurry",
+"act now",
+"start immediately",
+"immediately",
+"join immediately",
 
-    "రివ్యూ",
-    "ప్రొడక్ట్ కొనండి"
+"तुरंत",
+"अभी आवेदन करें",
+"जल्दी करें",
+"तुरंत जॉइन करें",
+
+"వెంటనే",
+"తక్షణం",
+
+/* Romanized Hindi */
+
+"turant",
+"turant apply karein",
+"turant apply kare",
+"abhi apply karein",
+"abhi apply kare",
+"jaldi karein",
+"jaldi kare",
+"abhi aavedan karein",
+"turant join karein",
+"turant join kare",
+"seats simit hain",
+"simat seat",
+
+/* Romanized Telugu */
+
+"ventane",
+"ventane apply cheyandi",
+"ventane apply cheyyandi",
+"ventane darakhastu cheyandi",
+"ventane darakhastu cheyyandi",
+"twaraga",
+"twaraga apply cheyandi",
+"ippude apply cheyandi",
+"ventane join avvandi",
+"twaraga cheyandi"
 
 ],
 
 
-foreign: [
+/* ---------------------------------------------------------
+   MESSAGING
+--------------------------------------------------------- */
 
-    "foreign",
-    "overseas",
-    "abroad",
-    "international",
+messaging:[
 
-    "विदेश",
-    "विदेशी",
-    "विदेश में नौकरी",
+"whatsapp only",
+"telegram only",
+"contact only on whatsapp",
+"contact only on telegram",
+"dm us",
+"message us only",
+"contact us on whatsapp",
+"contact us on telegram",
 
-    "విదేశీ",
-    "విదేశాల్లో",
-    "అంతర్జాతీయ"
+"केवल व्हाट्सऐप",
+"केवल टेलीग्राम",
+"व्हाट्सऐप",
+"टेलीग्राम",
+
+"వాట్సాప్",
+"టెలిగ్రామ్",
+
+/* Romanized Hindi */
+
+"sirf whatsapp",
+"keval whatsapp",
+"whatsapp par sampark",
+"whatsapp par sampark karein",
+"whatsapp par sampark kare",
+"sirf telegram",
+"keval telegram",
+"telegram par sampark",
+"telegram par sampark karein",
+"telegram par sampark kare",
+
+/* Romanized Telugu */
+
+"kevalam whatsapp",
+"kevalam telegram",
+"whatsapp dwara",
+"whatsapp dwara sampradinchandi",
+"whatsapp lo sampradinchandi",
+"telegram dwara",
+"telegram dwara sampradinchandi",
+"telegram lo sampradinchandi"
+
+],
+
+
+/* ---------------------------------------------------------
+   PERSONAL INFORMATION
+--------------------------------------------------------- */
+
+personal:[
+
+"date of birth",
+"home address",
+"passport number",
+"passport details",
+"aadhaar",
+"aadhar",
+"bank account",
+"bank details",
+"credit card",
+"debit card",
+"pan card",
+"pan number",
+
+"जन्म तिथि",
+"घर का पता",
+"पासपोर्ट नंबर",
+"आधार",
+"बैंक विवरण",
+
+"పుట్టిన తేదీ",
+"ఇంటి చిరునామా",
+"పాస్‌పోర్ట్ నంబర్",
+"ఆధార్",
+"బ్యాంక్ వివరాలు",
+
+/* Romanized Hindi */
+
+"janam tithi",
+"janm tithi",
+"ghar ka pata",
+"passport number",
+"passport details",
+"aadhar number",
+"aadhaar number",
+"bank account",
+"bank details",
+"pan card",
+"pan number",
+"janam ki tareekh",
+
+/* Romanized Telugu */
+
+"puttina tedi",
+"puttina thedi",
+"inti chirunama",
+"inti address",
+"passport number",
+"passport details",
+"aadhaar number",
+"aadhar number",
+"bank account",
+"bank details",
+"pan card",
+"pan number"
+
+],
+
+
+/* ---------------------------------------------------------
+   DANGEROUS FILES
+--------------------------------------------------------- */
+
+danger:[
+
+".apk",
+".exe",
+".scr",
+".bat",
+"download apk",
+"download exe",
+"disable antivirus",
+"disable security",
+"unknown software"
+
+],
+
+
+/* ---------------------------------------------------------
+   REVIEW SCAMS
+--------------------------------------------------------- */
+
+review:[
+
+"5-star",
+"5 star",
+"five-star",
+"five star",
+"positive review",
+"fake review",
+"buy the product",
+"purchase the product",
+"review and earn",
+"product review",
+
+"प्रोडक्ट खरीदें",
+"5-स्टार",
+"5 स्टार",
+"प्रोडक्ट रिव्यू",
+
+"రివ్యూ",
+"ప్రొడక్ట్ కొనండి",
+
+/* Romanized Hindi */
+
+"product kharide",
+"product khariden",
+"product review",
+"review karke kamayen",
+"review karke paise kamayen",
+"5 star review",
+"five star review",
+
+/* Romanized Telugu */
+
+"product konandi",
+"product konandi",
+"product review",
+"review chesi sampadinchandi",
+"review chesi dabbu sampadinchandi",
+"5 star review"
+
+],
+
+
+/* ---------------------------------------------------------
+   FOREIGN
+--------------------------------------------------------- */
+
+foreign:[
+
+"foreign",
+"overseas",
+"abroad",
+"international",
+
+"विदेश",
+"विदेशी",
+"विदेश में नौकरी",
+
+"విదేశీ",
+"విదేశాల్లో",
+"అంతర్జాతీయ",
+
+/* Romanized Hindi */
+
+"videsh",
+"videshi",
+"videsh mein naukri",
+"videsh me naukri",
+"videsh mein job",
+"videsh me job",
+"videsh jaakar naukri",
+"antarashtriya",
+
+/* Romanized Telugu */
+
+"videshi",
+"videsallo",
+"videshamlo",
+"videsham lo udyogam",
+"videsallo udyogam",
+"videsallo job",
+"antarjaateeya",
+"antarjatiya"
 
 ]
 
@@ -864,87 +1232,236 @@ foreign: [
 
 
 /* =========================================================
-   HELPER
+   NORMALIZATION
 ========================================================= */
 
-function containsAny(text, list){
+function normalizeText(text){
 
-    return list.some(function(word){
+return text
 
-        return text.includes(
-            word.toLowerCase()
-        );
+.toLowerCase()
 
-    });
+.replace(/[.,!?;:()[\]{}"'`]/g," ")
+
+.replace(/\s+/g," ")
+
+.trim();
 
 }
 
 
 /* =========================================================
-   RESULT MESSAGE
+   KEYWORD DETECTION
 ========================================================= */
 
-function showMessage(icon, message){
+function containsAny(text,list){
 
-    result.className = "result warn";
+return list.some(function(word){
 
-    result.style.display = "block";
+return text.includes(
+word.toLowerCase()
+);
 
-    result.innerHTML =
-
-    `
-    <div class="status warnText">
-        ${icon}
-    </div>
-
-    <p class="note">
-        ${escapeHTML(message)}
-    </p>
-    `;
+});
 
 }
 
 
 /* =========================================================
-   ADVERTISEMENT BUTTON
+   LANGUAGE / SCRIPT DETECTION
 ========================================================= */
 
-advertisementButton.onclick = function(){
+function detectLanguage(text){
 
-    const original =
-        advertisementText.value.trim();
+const devanagari =
+/[\u0900-\u097F]/;
 
-
-    if(!original){
-
-        showMessage(
-            "⚠️",
-            "Please paste the complete job advertisement."
-        );
-
-        return;
-
-    }
+const telugu =
+/[\u0C00-\u0C7F]/;
 
 
-    result.className = "result info";
+/* Native Hindi */
 
-    result.style.display = "block";
+if(devanagari.test(text)){
 
-    result.innerHTML =
+return "Hindi";
 
-    `
-    <div class="status infoText">
-        ⏳ ANALYZING ADVERTISEMENT...
-    </div>
-    `;
+}
 
 
-    setTimeout(function(){
+/* Native Telugu */
 
-        analyzeAdvertisement(original);
+if(telugu.test(text)){
 
-    },300);
+return "Telugu";
+
+}
+
+
+/* Romanized detection */
+
+const hindiRomanPatterns=[
+
+"naukri",
+"rojgar",
+"bharti",
+"anubhav",
+"turant",
+"paise",
+"jama karein",
+"sampark",
+"videsh",
+"zarurat",
+"avashyakta"
+
+];
+
+
+const teluguRomanPatterns=[
+
+"udyogam",
+"udyogam",
+"anubhavam",
+"ventane",
+"cheyandi",
+"cheyyandi",
+"kattandi",
+"pampandi",
+"sampradinchandi",
+"videsallo",
+"avasaram ledu",
+"ledu"
+
+];
+
+
+let hindiHits=0;
+
+let teluguHits=0;
+
+
+hindiRomanPatterns.forEach(function(word){
+
+if(text.includes(word)){
+
+hindiHits++;
+
+}
+
+});
+
+
+teluguRomanPatterns.forEach(function(word){
+
+if(text.includes(word)){
+
+teluguHits++;
+
+}
+
+});
+
+
+if(
+hindiHits>0 &&
+hindiHits>=teluguHits
+){
+
+return "Romanized Hindi";
+
+}
+
+
+if(
+teluguHits>0 &&
+teluguHits>hindiHits
+){
+
+return "Romanized Telugu";
+
+}
+
+
+return "English / Unknown";
+
+}
+
+
+/* =========================================================
+   MESSAGE
+========================================================= */
+
+function showMessage(icon,message){
+
+result.className="result warn";
+
+result.style.display="block";
+
+result.innerHTML=
+
+`
+
+<div class="status warnText">
+
+${icon}
+
+</div>
+
+<p class="note">
+
+${escapeHTML(message)}
+
+</p>
+
+`;
+
+}
+
+
+/* =========================================================
+   AD BUTTON
+========================================================= */
+
+advertisementButton.onclick=function(){
+
+const original=
+advertisementText.value.trim();
+
+
+if(!original){
+
+showMessage(
+"⚠️",
+"Please paste the complete job advertisement."
+);
+
+return;
+
+}
+
+
+result.className="result info";
+
+result.style.display="block";
+
+result.innerHTML=
+
+`
+
+<div class="status infoText">
+
+⏳ ANALYZING ADVERTISEMENT...
+
+</div>
+
+`;
+
+
+setTimeout(function(){
+
+analyzeAdvertisement(original);
+
+},300);
 
 };
 
@@ -955,656 +1472,729 @@ advertisementButton.onclick = function(){
 
 function analyzeAdvertisement(original){
 
-    const text =
-        original.toLowerCase();
+const text=
+normalizeText(original);
 
 
-    let score = 0;
+let score=0;
 
-    let indicators = [];
+let indicators=[];
 
 
-    /* -----------------------------------------------------
-       JOB DETECTION
-    ----------------------------------------------------- */
+/* ---------------------------------------------------------
+   LANGUAGE
+--------------------------------------------------------- */
 
-    const jobDetected =
-        containsAny(text, RULES.job);
+const detectedLanguage=
+detectLanguage(text);
 
 
-    const jobStructure =
-        /salary|₹|rs\.?|per day|per hour|apply|requirements|qualification|hiring|vacancy|job description|career|position|आवेदन|योग्यता|वेतन|ఉద్యోగం|జీతం/i
-        .test(text);
+/* ---------------------------------------------------------
+   JOB DETECTION
+--------------------------------------------------------- */
 
+const jobDetected=
+containsAny(text,RULES.job);
 
-    if(!jobDetected && !jobStructure){
 
-        showInsufficient();
+const jobStructure=
 
-        return;
+/salary|₹|rs\.?|per day|per hour|apply|requirements|qualification|hiring|vacancy|job description|career|position|आवेदन|योग्यता|वेतन|ఉద్యోగం|జీతం|naukri|udyogam|job/i
 
-    }
+.test(text);
 
 
-    /* -----------------------------------------------------
-       PAYMENT
-    ----------------------------------------------------- */
+if(
+!jobDetected &&
+!jobStructure
+){
 
-    if(containsAny(text, RULES.payment)){
+showInsufficient();
 
-        score += 30;
+return;
 
-        indicators.push([
-            "💰",
-            "Upfront payment or fee request detected",
-            "high"
-        ]);
+}
 
-    }
 
+/* ---------------------------------------------------------
+   PAYMENT
+--------------------------------------------------------- */
 
-    /* -----------------------------------------------------
-       FAKE REVIEW
-    ----------------------------------------------------- */
+if(
+containsAny(text,RULES.payment)
+){
 
-    if(containsAny(text, RULES.review)){
+score+=30;
 
-        score += 25;
+indicators.push([
 
-        indicators.push([
-            "⭐",
-            "Product-review or review-manipulation indicator",
-            "high"
-        ]);
+"💰",
+"Upfront payment or fee request detected",
+"high"
 
-    }
+]);
 
+}
 
-    /* -----------------------------------------------------
-       EXPERIENCE
-    ----------------------------------------------------- */
 
-    if(containsAny(text, RULES.experience)){
+/* ---------------------------------------------------------
+   REVIEW
+--------------------------------------------------------- */
 
-        score += 8;
+if(
+containsAny(text,RULES.review)
+){
 
-        indicators.push([
-            "📋",
-            "No/low experience requirement",
-            "medium"
-        ]);
+score+=25;
 
-    }
+indicators.push([
 
+"⭐",
+"Product-review or review-manipulation indicator",
+"high"
 
-    /* -----------------------------------------------------
-       MESSAGING
-    ----------------------------------------------------- */
+]);
 
-    if(containsAny(text, RULES.messaging)){
+}
 
-        score += 12;
 
-        indicators.push([
-            "📱",
-            "Messaging-app-only contact",
-            "medium"
-        ]);
+/* ---------------------------------------------------------
+   EXPERIENCE
+--------------------------------------------------------- */
 
-    }
+if(
+containsAny(text,RULES.experience)
+){
 
+score+=8;
 
-    /* -----------------------------------------------------
-       URGENCY
-    ----------------------------------------------------- */
+indicators.push([
 
-    if(containsAny(text, RULES.urgency)){
+"📋",
+"No/low experience requirement",
+"medium"
 
-        score += 10;
+]);
 
-        indicators.push([
-            "⏱️",
-            "Urgency or pressure language",
-            "medium"
-        ]);
+}
 
-    }
 
+/* ---------------------------------------------------------
+   MESSAGING
+--------------------------------------------------------- */
 
-    /* -----------------------------------------------------
-       PERSONAL INFORMATION
-    ----------------------------------------------------- */
+if(
+containsAny(text,RULES.messaging)
+){
 
-    if(containsAny(text, RULES.personal)){
+score+=12;
 
-        score += 15;
+indicators.push([
 
-        indicators.push([
-            "🔐",
-            "Sensitive personal information requested",
-            "high"
-        ]);
+"📱",
+"Messaging-app-only contact",
+"medium"
 
-    }
+]);
 
+}
 
-    /* -----------------------------------------------------
-       FOREIGN EMPLOYMENT
-    ----------------------------------------------------- */
 
-    const foreign =
-        containsAny(text, RULES.foreign);
+/* ---------------------------------------------------------
+   URGENCY
+--------------------------------------------------------- */
 
+if(
+containsAny(text,RULES.urgency)
+){
 
-    if(foreign){
+score+=10;
 
-        score += 5;
+indicators.push([
 
-        indicators.push([
-            "🌍",
-            "Foreign/overseas employment claim detected",
-            "medium"
-        ]);
+"⏱️",
+"Urgency or pressure language",
+"medium"
 
-    }
+]);
 
+}
 
-    /* -----------------------------------------------------
-       RECRUITMENT LICENCE
-    ----------------------------------------------------- */
 
-    const hasLicense =
-        /mea|emigrate|recruiting agent|ra licence|ra license|license number|licence number|लाइसेंस|लाइसेंस नंबर|లైసెన్స్/i
-        .test(text);
+/* ---------------------------------------------------------
+   PERSONAL DATA
+--------------------------------------------------------- */
 
+if(
+containsAny(text,RULES.personal)
+){
 
-    if(!hasLicense){
+score+=15;
 
-        score += 8;
+indicators.push([
 
-        indicators.push([
-            "📋",
-            "No recruitment licence information found",
-            "medium"
-        ]);
+"🔐",
+"Sensitive personal information requested",
+"high"
 
-    }
+]);
 
+}
 
-    /* -----------------------------------------------------
-       OFFICIAL WEBSITE
-    ----------------------------------------------------- */
 
-    const hasWebsite =
-        /https?:\/\/|www\./i
-        .test(text);
+/* ---------------------------------------------------------
+   FOREIGN
+--------------------------------------------------------- */
 
+const foreign=
+containsAny(text,RULES.foreign);
 
-    if(!hasWebsite){
 
-        score += 5;
+if(foreign){
 
-        indicators.push([
-            "🌐",
-            "No website/contact source provided",
-            "medium"
-        ]);
+score+=5;
 
-    }
+indicators.push([
 
+"🌍",
+"Foreign/overseas employment claim detected",
+"medium"
 
-    /* -----------------------------------------------------
-       DANGEROUS SOFTWARE
-    ----------------------------------------------------- */
+]);
 
-    if(containsAny(text, RULES.danger)){
+}
 
-        score += 35;
 
-        indicators.push([
-            "💻",
-            "Potentially dangerous file/software indicator",
-            "high"
-        ]);
+/* ---------------------------------------------------------
+   LICENCE
+--------------------------------------------------------- */
 
-    }
+const hasLicense=
 
+/mea|emigrate|recruiting agent|ra licence|ra license|license number|licence number|लाइसेंस|लाइसेंस नंबर|లైసెన్స్|licence/i
 
-    /* -----------------------------------------------------
-       EXTRA COMBINATION RISK
-    ----------------------------------------------------- */
+.test(text);
 
-    const paymentDetected =
-        containsAny(text, RULES.payment);
 
-    const urgencyDetected =
-        containsAny(text, RULES.urgency);
+if(!hasLicense){
 
-    const messagingDetected =
-        containsAny(text, RULES.messaging);
+score+=8;
 
+indicators.push([
 
-    if(
-        paymentDetected &&
-        urgencyDetected
-    ){
+"📋",
+"No recruitment licence information found",
+"medium"
 
-        score += 10;
+]);
 
-        indicators.push([
-            "🚨",
-            "Payment request combined with urgency",
-            "high"
-        ]);
+}
 
-    }
 
+/* ---------------------------------------------------------
+   WEBSITE
+--------------------------------------------------------- */
 
-    if(
-        paymentDetected &&
-        messagingDetected
-    ){
+const hasWebsite=
 
-        score += 8;
+/https?:\/\/|www\./i
+.test(text);
 
-        indicators.push([
-            "🚨",
-            "Payment request combined with private messaging contact",
-            "high"
-        ]);
 
-    }
+if(!hasWebsite){
 
+score+=5;
 
-    /* -----------------------------------------------------
-       LIMIT SCORE
-    ----------------------------------------------------- */
+indicators.push([
 
-    score =
-        Math.min(score,100);
+"🌐",
+"No official website/contact source provided",
+"medium"
 
+]);
 
-    /* -----------------------------------------------------
-       VERDICT
-    ----------------------------------------------------- */
+}
 
-    let css;
-    let textClass;
-    let verdict;
-    let icon;
 
+/* ---------------------------------------------------------
+   DANGEROUS SOFTWARE
+--------------------------------------------------------- */
 
-    if(score >= 70){
+if(
+containsAny(text,RULES.danger)
+){
 
-        css = "danger";
+score+=35;
 
-        textClass = "dangerText";
+indicators.push([
 
-        verdict =
-            "HIGH RECRUITMENT RISK";
+"💻",
+"Potentially dangerous file/software indicator",
+"high"
 
-        icon = "🚨";
+]);
 
-    }
+}
 
-    else if(score >= 35){
 
-        css = "warn";
+/* ---------------------------------------------------------
+   COMBINATION RISK
+--------------------------------------------------------- */
 
-        textClass = "warnText";
+const paymentDetected=
+containsAny(text,RULES.payment);
 
-        verdict =
-            "SUSPICIOUS RECRUITMENT RISK";
+const urgencyDetected=
+containsAny(text,RULES.urgency);
 
-        icon = "⚠️";
+const messagingDetected=
+containsAny(text,RULES.messaging);
 
-    }
 
-    else{
+if(
+paymentDetected &&
+urgencyDetected
+){
 
-        css = "safe";
+score+=10;
 
-        textClass = "safeText";
+indicators.push([
 
-        verdict =
-            "LOW RECRUITMENT RISK";
+"🚨",
+"Payment request combined with urgency",
+"high"
 
-        icon = "✅";
+]);
 
-    }
+}
 
 
-    showAdvertisementResult(
-        verdict,
-        css,
-        textClass,
-        icon,
-        score,
-        foreign,
-        indicators
-    );
+if(
+paymentDetected &&
+messagingDetected
+){
+
+score+=8;
+
+indicators.push([
+
+"🚨",
+"Payment request combined with private messaging contact",
+"high"
+
+]);
+
+}
+
+
+/* ---------------------------------------------------------
+   LIMIT
+--------------------------------------------------------- */
+
+score=
+Math.min(score,100);
+
+
+/* ---------------------------------------------------------
+   VERDICT
+--------------------------------------------------------- */
+
+let css;
+
+let textClass;
+
+let verdict;
+
+let icon;
+
+
+if(score>=70){
+
+css="danger";
+
+textClass="dangerText";
+
+verdict=
+"HIGH RECRUITMENT RISK";
+
+icon="🚨";
+
+}
+
+else if(score>=35){
+
+css="warn";
+
+textClass="warnText";
+
+verdict=
+"SUSPICIOUS RECRUITMENT RISK";
+
+icon="⚠️";
+
+}
+
+else{
+
+css="safe";
+
+textClass="safeText";
+
+verdict=
+"LOW RECRUITMENT RISK";
+
+icon="✅";
+
+}
+
+
+/* ---------------------------------------------------------
+   DISPLAY
+--------------------------------------------------------- */
+
+showAdvertisementResult(
+
+verdict,
+css,
+textClass,
+icon,
+score,
+foreign,
+indicators,
+detectedLanguage
+
+);
 
 }
 
 
 /* =========================================================
-   INSUFFICIENT INFORMATION
+   INSUFFICIENT
 ========================================================= */
 
 function showInsufficient(){
 
-    result.className =
-        "result info";
+result.className="result info";
 
-    result.style.display =
-        "block";
+result.style.display="block";
+
+result.innerHTML=
+
+`
+
+<div class="status infoText">
+
+ℹ️ INSUFFICIENT JOB INFORMATION
+
+</div>
 
 
-    result.innerHTML =
+<div class="score infoText">
 
-    `
-    <div class="status infoText">
-        ℹ️ INSUFFICIENT JOB INFORMATION
-    </div>
+0/100
 
-    <div class="score infoText">
-        0/100
-    </div>
+</div>
 
-    <div class="infoRow">
 
-        <div class="label">
-            Verification Type
-        </div>
+<div class="infoRow">
 
-        <div class="value">
-            Not detected as a job advertisement
-        </div>
+<div class="label">
 
-    </div>
+Verification Type
 
-    <div class="infoRow">
+</div>
 
-        <div class="label">
-            Job Advertisement
-        </div>
+<div class="value">
 
-        <div class="value">
-            NOT DETECTED
-        </div>
+Not detected as a job advertisement
 
-    </div>
+</div>
 
-    <div class="infoRow">
+</div>
 
-        <div class="label">
-            Foreign Employment
-        </div>
 
-        <div class="value">
-            NOT DETECTED
-        </div>
+<div class="indicator low">
 
-    </div>
+✅ No recruitment-risk indicators detected.
 
-    <div class="indicator low">
+</div>
 
-        ✅ No recruitment-risk indicators
-        detected in the submitted text.
 
-    </div>
+<div class="note">
 
-    <div class="note">
+The submitted text does not contain enough
+job-related information for recruitment-risk analysis.
 
-        The submitted text does not contain enough
-        job-related information for recruitment-risk
-        analysis.
+</div>
 
-    </div>
-    `;
+`;
 
 }
 
 
 /* =========================================================
-   DISPLAY ADVERTISEMENT RESULT
+   RESULT DISPLAY
 ========================================================= */
 
 function showAdvertisementResult(
-    verdict,
-    css,
-    textClass,
-    icon,
-    score,
-    foreign,
-    indicators
+
+verdict,
+css,
+textClass,
+icon,
+score,
+foreign,
+indicators,
+detectedLanguage
+
 ){
 
-    let indicatorHTML = "";
+let indicatorHTML="";
 
 
-    if(indicators.length === 0){
+if(indicators.length===0){
 
-        indicatorHTML =
+indicatorHTML=
 
-        `
-        <div class="indicator low">
+`
 
-            ✅ No major risk indicator detected.
+<div class="indicator low">
 
-        </div>
-        `;
+✅ No major risk indicator detected.
 
-    }
+</div>
 
-    else{
+`;
 
-        indicators.forEach(function(item){
+}
 
-            indicatorHTML +=
+else{
 
-            `
-            <div class="indicator ${item[2]}">
+indicators.forEach(function(item){
 
-                ${item[0]}
-                ${escapeHTML(item[1])}
+indicatorHTML+=
 
-            </div>
-            `;
+`
 
-        });
+<div class="indicator ${item[2]}">
 
-    }
+${item[0]}
+${escapeHTML(item[1])}
 
+</div>
 
-    result.className =
-        "result " + css;
+`;
 
-    result.style.display =
-        "block";
+});
 
+}
 
-    result.innerHTML =
 
-    `
-    <div class="status ${textClass}">
+result.className=
+"result "+css;
 
-        ${icon}
-        ${verdict}
+result.style.display=
+"block";
 
-    </div>
 
+result.innerHTML=
 
-    <div class="score ${textClass}">
+`
 
-        ${score}/100
+<div class="status ${textClass}">
 
-    </div>
+${icon}
+${verdict}
 
+</div>
 
-    <div class="infoRow">
 
-        <div class="label">
-            Verification Type
-        </div>
+<div class="score ${textClass}">
 
-        <div class="value">
-            Job Advertisement
-        </div>
+${score}/100
 
-    </div>
+</div>
 
 
-    <div class="infoRow">
+<div class="infoRow">
 
-        <div class="label">
-            Job Advertisement
-        </div>
+<div class="label">
 
-        <div class="value">
-            DETECTED
-        </div>
+Detected Language / Input Style
 
-    </div>
+</div>
 
+<div class="value">
 
-    <div class="infoRow">
+${escapeHTML(detectedLanguage)}
 
-        <div class="label">
-            Foreign Employment
-        </div>
+</div>
 
-        <div class="value">
+</div>
 
-            ${foreign ? "YES" : "NOT DETECTED"}
 
-        </div>
+<div class="infoRow">
 
-    </div>
+<div class="label">
 
+Verification Type
 
-    <div class="infoRow">
+</div>
 
-        <div class="label">
-            Risk Indicators
-        </div>
+<div class="value">
 
-        <div class="value">
+Job Advertisement
 
-            ${indicatorHTML}
+</div>
 
-        </div>
+</div>
 
-    </div>
 
+<div class="infoRow">
 
-    <div class="note">
+<div class="label">
 
-        Offline analysis complete.
+Foreign Employment
 
-        <br><br>
+</div>
 
-        This is a recruitment-risk assessment,
-        not a guarantee that a job is genuine or fake.
+<div class="value">
 
-    </div>
+${foreign?"YES":"NOT DETECTED"}
 
+</div>
 
-    <div class="actions">
+</div>
 
-        <a
-            class="emigrate"
-            href="https://emigrate.gov.in/"
-            target="_blank"
-            rel="noopener noreferrer">
 
-            🇮🇳 CHECK ON eMIGRATE
+<div class="infoRow">
 
-        </a>
+<div class="label">
 
+Risk Indicators
 
-        <a
-            class="report"
-            href="https://www.madad.gov.in/madad/GrievantRegistration"
-            target="_blank"
-            rel="noopener noreferrer">
+</div>
 
-            🚨 REPORT FAKE AGENT
+<div class="value">
 
-        </a>
+${indicatorHTML}
 
-    </div>
+</div>
 
-    `;
+</div>
+
+
+<div class="note">
+
+Offline multilingual analysis complete.
+
+<br><br>
+
+Supports English, Hindi, Telugu,
+Romanized Hindi and Romanized Telugu.
+
+<br><br>
+
+This is a recruitment-risk assessment,
+not a guarantee that a job is genuine or fake.
+
+</div>
+
+
+<div class="actions">
+
+<a
+class="emigrate"
+href="https://emigrate.gov.in/"
+target="_blank"
+rel="noopener noreferrer">
+
+🇮🇳 CHECK ON eMIGRATE
+
+</a>
+
+
+<a
+class="report"
+href="https://www.madad.gov.in/madad/GrievantRegistration"
+target="_blank"
+rel="noopener noreferrer">
+
+🚨 REPORT FAKE AGENT
+
+</a>
+
+</div>
+
+`;
 
 }
 
 
 /* =========================================================
-   WEBSITE CHECK BUTTON
+   WEBSITE BUTTON
 ========================================================= */
 
-websiteButton.onclick = function(){
+websiteButton.onclick=function(){
 
-    let value =
-        websiteURL.value.trim();
-
-
-    if(!value){
-
-        showMessage(
-            "⚠️",
-            "Please enter a website URL."
-        );
-
-        return;
-
-    }
+let value=
+websiteURL.value.trim();
 
 
-    if(
-        !/^https?:\/\//i
-        .test(value)
-    ){
+if(!value){
 
-        value =
-            "https://" + value;
+showMessage(
+"⚠️",
+"Please enter a website URL."
+);
 
-    }
+return;
 
-
-    let url;
+}
 
 
-    try{
+if(
+!/^https?:\/\//i.test(value)
+){
 
-        url =
-            new URL(value);
+value=
+"https://"+value;
 
-    }
-
-    catch(error){
-
-        showMessage(
-            "❌",
-            "Invalid website URL."
-        );
-
-        return;
-
-    }
+}
 
 
-    const government =
-        isGovernmentDomain(
-            url.hostname
-        );
+let url;
 
 
-    showWebsiteResult(
-        url,
-        government
-    );
+try{
+
+url=
+new URL(value);
+
+}
+
+catch(error){
+
+showMessage(
+"❌",
+"Invalid website URL."
+);
+
+return;
+
+}
+
+
+const government=
+isGovernmentDomain(
+url.hostname
+);
+
+
+showWebsiteResult(
+url,
+government
+);
 
 };
 
@@ -1614,245 +2204,226 @@ websiteButton.onclick = function(){
 ========================================================= */
 
 function showWebsiteResult(
-    url,
-    government
+url,
+government
 ){
 
-    let score;
-    let css;
-    let textClass;
-    let verdict;
-    let icon;
+let score;
 
+let css;
 
-    /*
-       IMPORTANT:
+let textClass;
 
-       This frontend does NOT claim that a website
-       is genuine simply because it is reachable.
+let verdict;
 
-       It checks domain structure only.
-    */
+let icon;
 
 
-    if(government){
+if(government){
 
-        score = 20;
+score=20;
 
-        css = "gov";
+css="gov";
 
-        textClass = "govText";
+textClass="govText";
 
-        verdict =
-            "GOVERNMENT DOMAIN FORMAT DETECTED";
+verdict=
+"GOVERNMENT DOMAIN FORMAT DETECTED";
 
-        icon = "🇮🇳";
+icon="🇮🇳";
 
-    }
+}
 
-    else{
+else{
 
-        score = 50;
+score=50;
 
-        css = "warn";
+css="warn";
 
-        textClass = "warnText";
+textClass="warnText";
 
-        verdict =
-            "NON-GOVERNMENT DOMAIN";
+verdict=
+"NON-GOVERNMENT DOMAIN";
 
-        icon = "⚠️";
+icon="⚠️";
 
-    }
+}
 
 
-    result.className =
-        "result " + css;
+result.className=
+"result "+css;
 
-    result.style.display =
-        "block";
+result.style.display=
+"block";
 
 
-    result.innerHTML =
+result.innerHTML=
 
-    `
-    <div class="status ${textClass}">
+`
 
-        ${icon}
-        ${verdict}
+<div class="status ${textClass}">
 
-    </div>
+${icon}
+${verdict}
 
+</div>
 
-    <div class="score ${textClass}">
 
-        ${score}/100
+<div class="score ${textClass}">
 
-    </div>
+${score}/100
 
+</div>
 
-    <div class="infoRow">
 
-        <div class="label">
-            Website
-        </div>
+<div class="infoRow">
 
-        <div class="value">
+<div class="label">
 
-            ${escapeHTML(url.hostname)}
+Website
 
-        </div>
+</div>
 
-    </div>
+<div class="value">
 
+${escapeHTML(url.hostname)}
 
-    <div class="infoRow">
+</div>
 
-        <div class="label">
-            Government Domain Format
-        </div>
+</div>
 
-        <div class="value">
 
-            ${government ? "YES" : "NO"}
+<div class="infoRow">
 
-        </div>
+<div class="label">
 
-    </div>
+Government Domain Format
 
+</div>
 
-    <div class="infoRow">
+<div class="value">
 
-        <div class="label">
-            Protocol
-        </div>
+${government?"YES":"NO"}
 
-        <div class="value">
+</div>
 
-            ${escapeHTML(
-                url.protocol.replace(":","").toUpperCase()
-            )}
+</div>
 
-        </div>
 
-    </div>
+<div class="infoRow">
 
+<div class="label">
 
-    <div class="note">
+Protocol
 
-        ⚠️ Domain format alone does not prove
-        that a website or recruitment offer is genuine.
+</div>
 
-        <br><br>
+<div class="value">
 
-        A <b>.gov.in</b> domain is treated as a
-        government-domain format indicator.
+${escapeHTML(
+url.protocol
+.replace(":","")
+.toUpperCase()
+)}
 
-        <br><br>
+</div>
 
-        For recruitment verification, cross-check
-        the employer or recruiting agent through
-        appropriate official sources.
+</div>
 
-    </div>
 
+<div class="note">
 
-    <div class="actions">
+⚠️ Domain format alone does not prove
+that a website or recruitment offer is genuine.
 
-        <a
-            class="emigrate"
-            href="https://emigrate.gov.in/"
-            target="_blank"
-            rel="noopener noreferrer">
+<br><br>
 
-            🇮🇳 CHECK ON eMIGRATE
+A <b>.gov.in</b> domain is treated as a
+government-domain format indicator.
 
-        </a>
+<br><br>
 
+For recruitment verification, cross-check
+the employer or recruiting agent through
+appropriate official sources.
 
-        <a
-            class="report"
-            href="https://www.madad.gov.in/madad/GrievantRegistration"
-            target="_blank"
-            rel="noopener noreferrer">
+</div>
 
-            🚨 REPORT FAKE AGENT
 
-        </a>
+<div class="actions">
 
-    </div>
+<a
+class="emigrate"
+href="https://emigrate.gov.in/"
+target="_blank"
+rel="noopener noreferrer">
 
-    `;
+🇮🇳 CHECK ON eMIGRATE
+
+</a>
+
+
+<a
+class="report"
+href="https://www.madad.gov.in/madad/GrievantRegistration"
+target="_blank"
+rel="noopener noreferrer">
+
+🚨 REPORT FAKE AGENT
+
+</a>
+
+</div>
+
+`;
 
 }
 
 
 /* =========================================================
-   GOVERNMENT DOMAIN DETECTION
+   GOVERNMENT DOMAIN
 ========================================================= */
 
 function isGovernmentDomain(hostname){
 
-    const host =
-        hostname
-        .toLowerCase()
-        .replace(/^www\./,"");
+const host=
+hostname
+.toLowerCase()
+.replace(/^www\./,"");
 
 
-    return (
-        host === "gov.in" ||
-        host.endsWith(".gov.in")
-    );
+return(
+
+host==="gov.in" ||
+host.endsWith(".gov.in")
+
+);
 
 }
 
 
 /* =========================================================
-   HTML ESCAPE
+   ESCAPE HTML
 ========================================================= */
 
 function escapeHTML(value){
 
-    return String(value)
+return String(value)
 
-        .replace(/&/g,"&amp;")
+.replace(/&/g,"&amp;")
 
-        .replace(/</g,"&lt;")
+.replace(/</g,"&lt;")
 
-        .replace(/>/g,"&gt;")
+.replace(/>/g,"&gt;")
 
-        .replace(/"/g,"&quot;")
+.replace(/"/g,"&quot;")
 
-        .replace(/'/g,"&#039;");
+.replace(/'/g,"&#039;");
 
 }
-
-
-/* =========================================================
-   LANGUAGE FEEDBACK
-========================================================= */
-
-language.addEventListener(
-    "change",
-    function(){
-
-        const selected =
-            language.value;
-
-
-        if(selected === "hi"){
-
-            document.querySelector(
-                ".description"
-            );
-
-        }
-
-    }
-);
-
 
 </script>
 
 </body>
+
 </html>
