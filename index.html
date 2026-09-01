@@ -1,821 +1,1074 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-<meta name="description"
-content="DruVictor-X Royal Verifier - recruitment website and advertisement risk assessment.">
-
-<meta name="author"
-content="Hananya Pothabathina">
-
-<meta name="creator"
-content="Hananya Pothabathina">
-
-<meta name="copyright"
-content="© 2026 Hananya Pothabathina">
-
-<title>DruVictor-X Royal Verifier</title>
-
-<style>
-*{box-sizing:border-box}
-
-body{
-    margin:0;
-    background:#050505;
-    color:#ead9a0;
-    font-family:Arial,sans-serif
-}
-
-header{
-    text-align:center;
-    padding:35px 15px 20px
-}
-
-.logo{
-    font-size:44px;
-    font-weight:800;
-    letter-spacing:3px;
-    color:#d4af37
-}
-
-.tag{
-    margin-top:7px;
-    color:#8e7738;
-    font-size:11px;
-    letter-spacing:3px
-}
-
-.author{
-    margin-top:13px;
-    color:#d4af37;
-    font-weight:700
-}
-
-.container{
-    width:92%;
-    max-width:900px;
-    margin:auto
-}
-
-.card{
-    background:#0b0b0b;
-    border:1px solid #5d491b;
-    border-radius:20px;
-    padding:28px;
-    box-shadow:0 20px 60px #000
-}
-
-.modes{
-    display:flex;
-    gap:10px;
-    margin-bottom:25px
-}
-
-.mode{
-    flex:1;
-    padding:15px;
-    border-radius:9px;
-    border:1px solid #5d491b;
-    background:#080808;
-    color:#c6ae69;
-    font-weight:800;
-    cursor:pointer
-}
-
-.mode.active{
-    background:linear-gradient(
-        135deg,#9b7317,#f1d05b,#b68a20
-    );
-    color:#050505
-}
-
-h2{color:#d4af37}
-
-.description{
-    color:#a99b72;
-    line-height:1.7
-}
-
-input,textarea{
-    width:100%;
-    background:#050505;
-    color:#f1e4bd;
-    border:1px solid #5d491b;
-    border-radius:9px;
-    padding:16px;
-    margin:12px 0;
-    font:inherit;
-    outline:none
-}
-
-textarea{
-    height:250px;
-    resize:vertical
-}
-
-input:focus,textarea:focus{
-    border-color:#d4af37
-}
-
-.verify{
-    width:100%;
-    padding:17px;
-    border:0;
-    border-radius:9px;
-    background:linear-gradient(
-        135deg,#9b7317,#f1d05b,#b68a20
-    );
-    color:#050505;
-    font-weight:800;
-    cursor:pointer;
-    font-size:15px
-}
-
-.hidden{display:none}
-
-.result{
-    display:none;
-    margin-top:25px;
-    padding:25px;
-    border-radius:15px
-}
-
-.result.safe{
-    background:#07150b;
-    border:1px solid #3d9b5b
-}
-
-.result.warn{
-    background:#211603;
-    border:1px solid #d69a22
-}
-
-.result.danger{
-    background:#210806;
-    border:1px solid #d64032
-}
-
-.result.info{
-    background:#101318;
-    border:1px solid #64748b
-}
-
-.status{
-    text-align:center;
-    font-size:24px;
-    font-weight:800
-}
-
-.safeText{color:#55e884}
-.warnText{color:#ffd34d}
-.dangerText{color:#ff5c50}
-.infoText{color:#8fc7ff}
-
-.score{
-    text-align:center;
-    font-size:46px;
-    font-weight:800;
-    margin:15px
-}
-
-.infoRow{
-    border-bottom:1px solid #29210d;
-    padding:13px 0
-}
-
-.label{
-    color:#857653;
-    font-size:11px;
-    text-transform:uppercase
-}
-
-.value{
-    color:#eee0b5;
-    font-weight:700;
-    margin-top:5px;
-    word-break:break-word
-}
-
-.indicator{
-    padding:10px;
-    margin:7px 0;
-    border-radius:7px;
-    font-weight:700
-}
-
-.indicator.high{
-    color:#ff6b60;
-    background:#300b08
-}
-
-.indicator.medium{
-    color:#ffd34d;
-    background:#302305
-}
-
-.indicator.low{
-    color:#55e884;
-    background:#092616
-}
-
-.actions{
-    display:flex;
-    gap:10px;
-    margin-top:25px
-}
-
-.actions a{
-    flex:1;
-    padding:15px;
-    border-radius:9px;
-    text-align:center;
-    text-decoration:none;
-    font-weight:800
-}
-
-.emigrate{
-    background:#d4af37;
-    color:#050505
-}
-
-.mea{
-    background:#1e6b4d;
-    color:white
-}
-
-.report{
-    background:#42140f;
-    color:#f0dca5
-}
-
-.note{
-    text-align:center;
-    color:#807250;
-    font-size:11px;
-    line-height:1.7;
-    margin-top:20px
-}
-
-footer{
-    text-align:center;
-    padding:35px;
-    color:#665522;
-    font-size:11px
-}
-
-@media(max-width:650px){
-    .modes,.actions{flex-direction:column}
-    .logo{font-size:34px}
-    .card{padding:20px}
-}
-</style>
-</head>
-
-<body>
-
-<header>
-    <div class="logo">DruVictor-X</div>
-    <div class="tag">ROYAL VERIFIER • SAFE MIGRATION</div>
-    <div class="author">By Hananya Krishna</div>
-</header>
-
-<div class="container">
-<div class="card">
-
-<div class="modes">
-    <button id="websiteMode" class="mode active">
-        🔗 CHECK WEBSITE
-    </button>
-
-    <button id="adMode" class="mode">
-        📄 VERIFY ADVERTISEMENT
-    </button>
-</div>
-
-<section id="websiteSection">
-
-<h2>🔎 Check Job Website</h2>
-
-<p class="description">
-Enter the website URL. DruVictor-X sends the URL to the
-secure backend inspection service instead of directly
-loading the target website in your browser.
-</p>
-
-<input
-id="websiteURL"
-type="text"
-placeholder="https://example.com">
-
-<button
-id="websiteButton"
-class="verify">
-🔐 SECURELY CHECK WEBSITE
-</button>
-
-</section>
-
-<section id="advertisementSection" class="hidden">
-
-<h2>📄 Verify Job Advertisement</h2>
-
-<p class="description">
-Paste the complete advertisement. DruVictor-X detects
-recruitment warning signs and extracts MEA/Recruiting
-Agent licence information when present.
-</p>
-
-<textarea
-id="advertisementText"
-placeholder="Paste the complete job advertisement here...">
-</textarea>
-
-<button
-id="advertisementButton"
-class="verify">
-🔐 VERIFY ADVERTISEMENT
-</button>
-
-</section>
-
-<div id="result" class="result"></div>
-
-</div>
-</div>
-
-<footer>
-DruVictor-X © 2026
-<br><br>
-Science & Innovation for Sustainability
-</footer>
-
-<script>
 "use strict";
 
-const API="http://localhost:3000";
+const express = require("express");
+const path = require("path");
+const dns = require("dns").promises;
+const net = require("net");
+const http = require("http");
+const https = require("https");
 
-const websiteMode=
-document.getElementById("websiteMode");
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-const adMode=
-document.getElementById("adMode");
+app.use(express.json({ limit: "150kb" }));
+app.use(express.static(path.join(__dirname, "public")));
 
-const websiteSection=
-document.getElementById("websiteSection");
-
-const advertisementSection=
-document.getElementById("advertisementSection");
-
-const websiteButton=
-document.getElementById("websiteButton");
-
-const advertisementButton=
-document.getElementById("advertisementButton");
-
-const websiteURL=
-document.getElementById("websiteURL");
-
-const advertisementText=
-document.getElementById("advertisementText");
-
-const result=
-document.getElementById("result");
-
-function escapeHTML(value){
-    return String(value)
-    .replace(/&/g,"&amp;")
-    .replace(/</g,"&lt;")
-    .replace(/>/g,"&gt;")
-    .replace(/"/g,"&quot;")
-    .replace(/'/g,"&#039;");
-}
-
-function showLoading(message){
-    result.className="result info";
-    result.style.display="block";
-
-    result.innerHTML=`
-        <div class="status infoText">
-            ⏳ ${escapeHTML(message)}
-        </div>
-    `;
-}
-
-function showError(message){
-    result.className="result danger";
-    result.style.display="block";
-
-    result.innerHTML=`
-        <div class="status dangerText">
-            ❌ VERIFICATION ERROR
-        </div>
-
-        <div class="note">
-            ${escapeHTML(message)}
-        </div>
-    `;
-}
-
-websiteMode.onclick=()=>{
-    websiteSection.classList.remove("hidden");
-    advertisementSection.classList.add("hidden");
-
-    websiteMode.classList.add("active");
-    adMode.classList.remove("active");
-
-    result.style.display="none";
-};
-
-adMode.onclick=()=>{
-    websiteSection.classList.add("hidden");
-    advertisementSection.classList.remove("hidden");
-
-    websiteMode.classList.remove("active");
-    adMode.classList.add("active");
-
-    result.style.display="none";
-};
+const MAX_RESPONSE = 2 * 1024 * 1024;
+const TIMEOUT = 8000;
 
 
-/* =====================================================
-   WEBSITE CHECK
-===================================================== */
+/* =========================================================
+   SECURITY
+========================================================= */
 
-websiteButton.onclick=async()=>{
+function privateIPv4(ip) {
+    const p = ip.split(".").map(Number);
 
-    let value=websiteURL.value.trim();
+    if (p.length !== 4) return false;
 
-    if(!value){
-        showError("Please enter a website URL.");
-        return;
-    }
+    const [a,b] = p;
 
-    if(!/^https?:\/\//i.test(value)){
-        value="https://"+value;
-    }
-
-    try{
-        new URL(value);
-    }
-    catch{
-        showError("Invalid website URL.");
-        return;
-    }
-
-    showLoading(
-        "SECURELY INSPECTING WEBSITE..."
+    return (
+        a === 10 ||
+        a === 127 ||
+        (a === 169 && b === 254) ||
+        (a === 172 && b >= 16 && b <= 31) ||
+        (a === 192 && b === 168)
     );
+}
 
-    try{
+function privateIPv6(ip) {
+    const x = ip.toLowerCase();
 
-        const response=await fetch(
-            API+"/api/check-website",
-            {
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify({
-                    url:value
-                })
-            }
-        );
+    return (
+        x === "::1" ||
+        x.startsWith("fc") ||
+        x.startsWith("fd") ||
+        x.startsWith("fe80:")
+    );
+}
 
-        const data=await response.json();
+async function validateURL(value) {
 
-        if(!response.ok){
-            throw new Error(
-                data.error || "Website inspection failed."
-            );
+    const url = new URL(value);
+
+    if (!["http:", "https:"].includes(url.protocol)) {
+        throw new Error("Only HTTP and HTTPS websites are supported.");
+    }
+
+    const hostname = url.hostname;
+
+    if (
+        hostname === "localhost" ||
+        hostname.endsWith(".localhost") ||
+        hostname.endsWith(".local")
+    ) {
+        throw new Error("Local/private destinations are blocked.");
+    }
+
+    if (net.isIP(hostname)) {
+
+        if (
+            privateIPv4(hostname) ||
+            privateIPv6(hostname)
+        ) {
+            throw new Error("Private IP destinations are blocked.");
         }
 
-        showWebsiteResult(data);
-
-    }
-    catch(error){
-
-        showError(error.message);
-
-    }
-};
-
-
-/* =====================================================
-   WEBSITE RESULT
-===================================================== */
-
-function showWebsiteResult(data){
-
-    const css=
-        data.riskScore>=70
-        ?"danger"
-        :data.riskScore>=35
-        ?"warn"
-        :"safe";
-
-    const textClass=
-        data.riskScore>=70
-        ?"dangerText"
-        :data.riskScore>=35
-        ?"warnText"
-        :"safeText";
-
-    const icon=
-        data.riskScore>=70
-        ?"🚨"
-        :data.riskScore>=35
-        ?"⚠️"
-        :"✅";
-
-    let indicators="";
-
-    if(data.indicators.length===0){
-
-        indicators=`
-            <div class="indicator low">
-                ✅ No major indicator detected.
-            </div>
-        `;
-
-    }else{
-
-        data.indicators.forEach(item=>{
-            indicators+=`
-                <div class="indicator ${item.level}">
-                    ${item.icon}
-                    ${escapeHTML(item.text)}
-                </div>
-            `;
-        });
-
-    }
-
-    result.className="result "+css;
-    result.style.display="block";
-
-    result.innerHTML=`
-
-        <div class="status ${textClass}">
-            ${icon} ${escapeHTML(data.verdict)}
-        </div>
-
-        <div class="score ${textClass}">
-            ${data.riskScore}/100
-        </div>
-
-        <div class="infoRow">
-            <div class="label">Website</div>
-            <div class="value">
-                ${escapeHTML(data.url)}
-            </div>
-        </div>
-
-        <div class="infoRow">
-            <div class="label">Government Domain</div>
-            <div class="value">
-                ${data.governmentDomain?"YES":"NO"}
-            </div>
-        </div>
-
-        <div class="infoRow">
-            <div class="label">MEA Licence</div>
-            <div class="value">
-                ${escapeHTML(data.mea.status)}
-            </div>
-        </div>
-
-        <div class="infoRow">
-            <div class="label">Website Inspection</div>
-            <div class="value">
-                ${escapeHTML(data.inspection)}
-            </div>
-        </div>
-
-        <div class="infoRow">
-            <div class="label">Risk Indicators</div>
-            <div class="value">
-                ${indicators}
-            </div>
-        </div>
-
-        <div class="note">
-            Website content was inspected by the
-            DruVictor-X backend. The target website
-            was not directly opened in this browser.
-            <br><br>
-            This assessment is not an antivirus guarantee.
-        </div>
-
-        <div class="actions">
-
-            <a class="emigrate"
-               href="https://emigrate.gov.in/"
-               target="_blank"
-               rel="noopener noreferrer">
-               🇮🇳 eMIGRATE
-            </a>
-
-            <a class="mea"
-               href="https://www.mea.gov.in/ras.htm"
-               target="_blank"
-               rel="noopener noreferrer">
-               🇮🇳 MEA
-            </a>
-
-        </div>
-    `;
-}
-
-
-/* =====================================================
-   ADVERTISEMENT CHECK
-===================================================== */
-
-advertisementButton.onclick=async()=>{
-
-    const text=
-        advertisementText.value.trim();
-
-    if(!text){
-
-        showError(
-            "Please paste the complete job advertisement."
-        );
-
         return;
     }
 
-    showLoading(
-        "ANALYZING ADVERTISEMENT & MEA LICENCE..."
-    );
-
-    try{
-
-        const response=await fetch(
-            API+"/api/check-advertisement",
-            {
-                method:"POST",
-                headers:{
-                    "Content-Type":"application/json"
-                },
-                body:JSON.stringify({
-                    text
-                })
-            }
-        );
-
-        const data=await response.json();
-
-        if(!response.ok){
-            throw new Error(
-                data.error ||
-                "Advertisement verification failed."
-            );
-        }
-
-        showAdvertisementResult(data);
-
-    }
-    catch(error){
-
-        showError(error.message);
-
-    }
-};
-
-
-/* =====================================================
-   AD RESULT
-===================================================== */
-
-function showAdvertisementResult(data){
-
-    const css=
-        data.riskScore>=70
-        ?"danger"
-        :data.riskScore>=35
-        ?"warn"
-        :"safe";
-
-    const textClass=
-        data.riskScore>=70
-        ?"dangerText"
-        :data.riskScore>=35
-        ?"warnText"
-        :"safeText";
-
-    const icon=
-        data.riskScore>=70
-        ?"🚨"
-        :data.riskScore>=35
-        ?"⚠️"
-        :"✅";
-
-    let indicators="";
-
-    data.indicators.forEach(item=>{
-
-        indicators+=`
-            <div class="indicator ${item.level}">
-                ${item.icon}
-                ${escapeHTML(item.text)}
-            </div>
-        `;
-
+    const addresses = await dns.lookup(hostname, {
+        all: true
     });
 
-    if(!indicators){
+    for (const item of addresses) {
 
-        indicators=`
-            <div class="indicator low">
-                ✅ No major indicator detected.
-            </div>
-        `;
+        if (
+            item.family === 4 &&
+            privateIPv4(item.address)
+        ) {
+            throw new Error(
+                "Website resolves to a private IP address."
+            );
+        }
 
+        if (
+            item.family === 6 &&
+            privateIPv6(item.address)
+        ) {
+            throw new Error(
+                "Website resolves to a private IPv6 address."
+            );
+        }
     }
-
-    let licenceText="NOT FOUND";
-
-    if(data.meaLicence){
-
-        licenceText=
-            `${data.meaLicence.number} — `+
-            `${data.meaLicence.status}`;
-
-    }
-
-    result.className="result "+css;
-    result.style.display="block";
-
-    result.innerHTML=`
-
-        <div class="status ${textClass}">
-            ${icon} ${escapeHTML(data.verdict)}
-        </div>
-
-        <div class="score ${textClass}">
-            ${data.riskScore}/100
-        </div>
-
-        <div class="infoRow">
-            <div class="label">
-                Detected Language
-            </div>
-            <div class="value">
-                ${escapeHTML(data.language)}
-            </div>
-        </div>
-
-        <div class="infoRow">
-            <div class="label">
-                MEA / Recruiting Agent Licence
-            </div>
-            <div class="value">
-                ${escapeHTML(licenceText)}
-            </div>
-        </div>
-
-        <div class="infoRow">
-            <div class="label">
-                Risk Indicators
-            </div>
-            <div class="value">
-                ${indicators}
-            </div>
-        </div>
-
-        <div class="note">
-            MEA verification status is only marked
-            VERIFIED when the backend receives
-            authoritative verification data.
-            <br><br>
-            A licence number appearing in an advertisement
-            by itself does not prove that the advertisement
-            or job is genuine.
-        </div>
-
-        <div class="actions">
-
-            <a class="emigrate"
-               href="https://emigrate.gov.in/"
-               target="_blank"
-               rel="noopener noreferrer">
-               🇮🇳 CHECK eMIGRATE
-            </a>
-
-            <a class="mea"
-               href="https://www.mea.gov.in/ras.htm"
-               target="_blank"
-               rel="noopener noreferrer">
-               🇮🇳 MEA RAs
-            </a>
-
-        </div>
-    `;
 }
-</script>
 
-</body>
-</html>
+
+/* =========================================================
+   SAFE WEBSITE FETCH
+========================================================= */
+
+function fetchWebsite(url) {
+
+    return new Promise((resolve, reject) => {
+
+        const parsed = new URL(url);
+
+        const client =
+            parsed.protocol === "https:"
+                ? https
+                : http;
+
+        const request = client.get(
+            parsed,
+            {
+                timeout: TIMEOUT,
+
+                headers: {
+                    "User-Agent":
+                        "DruVictor-X-Security-Scanner/1.0",
+
+                    "Accept":
+                        "text/html,text/plain"
+                }
+            },
+
+            response => {
+
+                if (
+                    response.statusCode >= 300 &&
+                    response.statusCode < 400
+                ) {
+
+                    response.resume();
+
+                    reject(
+                        new Error(
+                            "Redirected websites are blocked for safety."
+                        )
+                    );
+
+                    return;
+                }
+
+                let body = "";
+                let size = 0;
+
+                response.on("data", chunk => {
+
+                    size += chunk.length;
+
+                    if (size > MAX_RESPONSE) {
+
+                        request.destroy();
+
+                        reject(
+                            new Error(
+                                "Website response is too large."
+                            )
+                        );
+
+                        return;
+                    }
+
+                    body += chunk.toString("utf8");
+                });
+
+                response.on("end", () => {
+
+                    resolve({
+                        status: response.statusCode,
+                        contentType:
+                            response.headers["content-type"] || "",
+                        body
+                    });
+
+                });
+            }
+        );
+
+        request.on("timeout", () => {
+
+            request.destroy();
+
+            reject(
+                new Error(
+                    "Website inspection timed out."
+                )
+            );
+        });
+
+        request.on("error", reject);
+    });
+}
+
+
+/* =========================================================
+   HTML → TEXT
+========================================================= */
+
+function htmlToText(html) {
+
+    return html
+        .replace(/<script[\s\S]*?<\/script>/gi, " ")
+        .replace(/<style[\s\S]*?<\/style>/gi, " ")
+        .replace(/<noscript[\s\S]*?<\/noscript>/gi, " ")
+        .replace(/<[^>]+>/g, " ")
+        .replace(/&nbsp;/gi, " ")
+        .replace(/&amp;/gi, "&")
+        .replace(/\s+/g, " ")
+        .trim()
+        .slice(0, 60000);
+}
+
+
+/* =========================================================
+   NORMALIZATION
+========================================================= */
+
+function normalize(text) {
+
+    return String(text)
+        .toLowerCase()
+        .replace(/[.,!?;:()[\]{}"'`]/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+}
+
+function contains(text, list) {
+
+    return list.some(word =>
+        text.includes(word.toLowerCase())
+    );
+}
+
+
+/* =========================================================
+   RISK DATABASE
+========================================================= */
+
+const RULES = {
+
+    payment: [
+        "processing fee",
+        "registration fee",
+        "advance payment",
+        "security deposit",
+        "visa fee",
+        "joining fee",
+        "application fee",
+        "starter kit",
+        "background verification fee",
+        "pay before",
+        "send money",
+        "payment required",
+        "pay a fee",
+        "pay fee",
+        "deposit money",
+
+        "processing fees",
+        "registration fees",
+        "fees jama",
+        "paisa jama",
+        "paise bheje",
+        "paise bhejen",
+        "shulk jama",
+        "dabbu kattandi",
+        "dabbu chellinchandi",
+        "dabbu pampandi",
+        "mundastu chellimpu"
+    ],
+
+    review: [
+        "5-star",
+        "5 star",
+        "five-star",
+        "five star",
+        "positive review",
+        "fake review",
+        "buy the product",
+        "purchase the product",
+        "review and earn",
+        "product review",
+        "review karke kamayen",
+        "review karke paise kamayen",
+        "product kharide",
+        "product khariden",
+        "product konandi",
+        "review chesi sampadinchandi",
+        "review chesi dabbu sampadinchandi"
+    ],
+
+    experience: [
+        "no experience",
+        "no prior experience",
+        "no experience required",
+        "without experience",
+        "basic data entry",
+        "unskilled",
+
+        "अनुभव आवश्यक नहीं",
+        "बिना अनुभव",
+        "कोई अनुभव नहीं",
+
+        "anubhav nahi",
+        "anubhav nahin",
+        "koi anubhav nahi",
+        "bina anubhav",
+
+        "అనుభవం అవసరం లేదు",
+        "anubhavam avasaram ledu",
+        "anubhavam avasaramledu"
+    ],
+
+    urgency: [
+        "urgent",
+        "apply today",
+        "limited seats",
+        "hurry",
+        "act now",
+        "start immediately",
+        "immediately",
+        "join immediately",
+
+        "तुरंत",
+        "अभी आवेदन करें",
+        "जल्दी करें",
+
+        "turant",
+        "turant apply karein",
+        "abhi apply karein",
+        "jaldi karein",
+
+        "వెంటనే",
+        "తక్షణం",
+        "ventane",
+        "ventane apply cheyandi",
+        "twaraga"
+    ],
+
+    messaging: [
+        "whatsapp only",
+        "telegram only",
+        "contact only on whatsapp",
+        "contact only on telegram",
+        "dm us",
+        "message us only",
+        "contact us on whatsapp",
+        "contact us on telegram",
+        "phone calls only",
+
+        "केवल व्हाट्सऐप",
+        "केवल टेलीग्राम",
+        "sirf whatsapp",
+        "keval whatsapp",
+        "sirf telegram",
+        "keval telegram",
+
+        "వాట్సాప్",
+        "టెలిగ్రామ్",
+        "whatsapp lo sampradinchandi",
+        "telegram lo sampradinchandi"
+    ],
+
+    personal: [
+        "date of birth",
+        "home address",
+        "passport number",
+        "passport details",
+        "aadhaar",
+        "aadhar",
+        "bank account",
+        "bank details",
+        "credit card",
+        "debit card",
+        "pan card",
+        "pan number",
+
+        "जन्म तिथि",
+        "घर का पता",
+        "पासपोर्ट नंबर",
+        "आधार",
+        "बैंक विवरण",
+
+        "पुट्टिना",
+        "janam tithi",
+        "ghar ka pata",
+        "aadhar number",
+        "aadhaar number"
+    ],
+
+    dangerous: [
+        ".apk",
+        ".exe",
+        ".scr",
+        ".bat",
+        "download apk",
+        "download exe",
+        "disable antivirus",
+        "disable security",
+        "unknown software"
+    ],
+
+    foreign: [
+        "foreign",
+        "overseas",
+        "abroad",
+        "international",
+
+        "विदेश",
+        "विदेशी",
+        "विदेश में नौकरी",
+
+        "విదేశీ",
+        "విదేశాల్లో",
+        "అంతర్జాతీయ",
+
+        "videsh",
+        "videshi",
+        "videsh mein naukri",
+        "videsh me naukri",
+        "videsh mein job",
+        "videsh me job",
+        "videsallo",
+        "videshamlo"
+    ]
+};
+
+
+/* =========================================================
+   MEA / RECRUITING AGENT LICENCE EXTRACTION
+========================================================= */
+
+function extractMEALicence(text) {
+
+    const patterns = [
+
+        /\b(?:MEA|RA|R\.A\.|Recruiting\s+Agent)\s*(?:Licence|License|Registration|Registration\s+No|Reg\.?\s*No)?\s*[:#-]?\s*([A-Z0-9][A-Z0-9\/-]{2,30})\b/i,
+
+        /\b(?:Licence|License|Registration\s+Certificate|RC)\s*(?:No|Number|#)?\s*[:#-]?\s*([A-Z0-9][A-Z0-9\/-]{2,30})\b/i,
+
+        /\bRA\s*No\.?\s*[:#-]?\s*([A-Z0-9][A-Z0-9\/-]{2,30})\b/i
+    ];
+
+    for (const regex of patterns) {
+
+        const match = text.match(regex);
+
+        if (match) {
+            return match[1].trim();
+        }
+    }
+
+    return null;
+}
+
+
+/* =========================================================
+   MEA VERIFICATION
+========================================================= */
+
+async function verifyMEALicence(number) {
+
+    if (!number) {
+
+        return {
+            found: false,
+            status: "NOT FOUND",
+            number: null
+        };
+    }
+
+    /*
+       IMPORTANT:
+       Do not claim that a licence is genuine merely
+       because an advertisement contains a number.
+
+       An official MEA/eMigrate machine-readable API
+       must be connected here before returning VERIFIED.
+    */
+
+    return {
+        found: true,
+        status: "NUMBER FOUND — VERIFY ON OFFICIAL eMIGRATE",
+        number
+    };
+}
+
+
+/* =========================================================
+   ADVERTISEMENT ANALYSIS
+========================================================= */
+
+async function analyzeAdvertisement(original) {
+
+    const text = normalize(original);
+
+    let score = 0;
+
+    const indicators = [];
+
+
+    /* PAYMENT */
+
+    if (contains(text, RULES.payment)) {
+
+        score += 30;
+
+        indicators.push({
+            icon: "💰",
+            text: "Upfront payment or fee request detected",
+            level: "high"
+        });
+    }
+
+
+    /* REVIEW */
+
+    if (contains(text, RULES.review)) {
+
+        score += 25;
+
+        indicators.push({
+            icon: "⭐",
+            text: "Product-review or review-manipulation indicator",
+            level: "high"
+        });
+    }
+
+
+    /* EXPERIENCE */
+
+    if (contains(text, RULES.experience)) {
+
+        score += 8;
+
+        indicators.push({
+            icon: "📋",
+            text: "No/low experience requirement",
+            level: "medium"
+        });
+    }
+
+
+    /* MESSAGING */
+
+    if (contains(text, RULES.messaging)) {
+
+        score += 12;
+
+        indicators.push({
+            icon: "📱",
+            text: "Messaging-app-only contact",
+            level: "medium"
+        });
+    }
+
+
+    /* URGENCY */
+
+    if (contains(text, RULES.urgency)) {
+
+        score += 10;
+
+        indicators.push({
+            icon: "⏱️",
+            text: "Urgency or pressure language",
+            level: "medium"
+        });
+    }
+
+
+    /* PERSONAL INFORMATION */
+
+    if (contains(text, RULES.personal)) {
+
+        score += 15;
+
+        indicators.push({
+            icon: "🔐",
+            text: "Sensitive personal information requested",
+            level: "high"
+        });
+    }
+
+
+    /* FOREIGN */
+
+    if (contains(text, RULES.foreign)) {
+
+        score += 5;
+
+        indicators.push({
+            icon: "🌍",
+            text: "Foreign/overseas employment claim detected",
+            level: "medium"
+        });
+    }
+
+
+    /* DANGEROUS FILE */
+
+    if (contains(text, RULES.dangerous)) {
+
+        score += 35;
+
+        indicators.push({
+            icon: "💻",
+            text: "Potentially dangerous software indicator",
+            level: "high"
+        });
+    }
+
+
+    /* MEA LICENCE */
+
+    const licence =
+        extractMEALicence(original);
+
+    const mea =
+        await verifyMEALicence(licence);
+
+
+    if (!licence) {
+
+        score += 8;
+
+        indicators.push({
+            icon: "📋",
+            text: "No MEA/Recruiting Agent licence number found",
+            level: "medium"
+        });
+
+    } else {
+
+        indicators.push({
+            icon: "🇮🇳",
+            text:
+                "MEA/Recruiting Agent licence number found: " +
+                licence,
+            level: "low"
+        });
+    }
+
+
+    /* COMBINATION RISKS */
+
+    const payment =
+        contains(text, RULES.payment);
+
+    const urgency =
+        contains(text, RULES.urgency);
+
+    const messaging =
+        contains(text, RULES.messaging);
+
+
+    if (payment && urgency) {
+
+        score += 10;
+
+        indicators.push({
+            icon: "🚨",
+            text:
+                "Payment request combined with urgency",
+            level: "high"
+        });
+    }
+
+
+    if (payment && messaging) {
+
+        score += 8;
+
+        indicators.push({
+            icon: "🚨",
+            text:
+                "Payment request combined with private messaging",
+            level: "high"
+        });
+    }
+
+
+    score = Math.min(score, 100);
+
+
+    let verdict;
+
+    if (score >= 70) {
+
+        verdict = "HIGH RECRUITMENT RISK";
+
+    } else if (score >= 35) {
+
+        verdict = "SUSPICIOUS RECRUITMENT RISK";
+
+    } else {
+
+        verdict = "LOW RECRUITMENT RISK";
+    }
+
+
+    return {
+        riskScore: score,
+        verdict,
+        language: detectLanguage(original),
+        meaLicence: mea,
+        indicators
+    };
+}
+
+
+/* =========================================================
+   LANGUAGE
+========================================================= */
+
+function detectLanguage(text) {
+
+    if (/[\u0900-\u097F]/.test(text)) {
+        return "Hindi / Devanagari";
+    }
+
+    if (/[\u0C00-\u0C7F]/.test(text)) {
+        return "Telugu";
+    }
+
+    const lower = text.toLowerCase();
+
+    const hindi = [
+        "naukri",
+        "rojgar",
+        "bharti",
+        "anubhav",
+        "turant",
+        "paise",
+        "sampark",
+        "videsh"
+    ];
+
+    const telugu = [
+        "udyogam",
+        "anubhavam",
+        "ventane",
+        "cheyandi",
+        "kattandi",
+        "pampandi",
+        "videsallo"
+    ];
+
+    let h = 0;
+    let t = 0;
+
+    hindi.forEach(x => {
+        if (lower.includes(x)) h++;
+    });
+
+    telugu.forEach(x => {
+        if (lower.includes(x)) t++;
+    });
+
+    if (h > t && h > 0) {
+        return "Romanized Hindi";
+    }
+
+    if (t > h && t > 0) {
+        return "Romanized Telugu";
+    }
+
+    return "English / Unknown";
+}
+
+
+/* =========================================================
+   ADVERTISEMENT API
+========================================================= */
+
+app.post(
+    "/api/check-advertisement",
+    async (req, res) => {
+
+        try {
+
+            const text =
+                String(req.body.text || "").trim();
+
+            if (!text) {
+
+                return res.status(400).json({
+                    error:
+                        "Advertisement text is required."
+                });
+            }
+
+            if (text.length > 100000) {
+
+                return res.status(413).json({
+                    error:
+                        "Advertisement is too large."
+                });
+            }
+
+            const result =
+                await analyzeAdvertisement(text);
+
+            res.json(result);
+
+        } catch (error) {
+
+            console.error(error);
+
+            res.status(500).json({
+                error:
+                    "Advertisement analysis failed."
+            });
+        }
+    }
+);
+
+
+/* =========================================================
+   WEBSITE API
+========================================================= */
+
+app.post(
+    "/api/check-website",
+    async (req, res) => {
+
+        try {
+
+            let url =
+                String(req.body.url || "").trim();
+
+            if (!url) {
+
+                return res.status(400).json({
+                    error:
+                        "Website URL is required."
+                });
+            }
+
+            if (!/^https?:\/\//i.test(url)) {
+                url = "https://" + url;
+            }
+
+            await validateURL(url);
+
+            const parsed = new URL(url);
+
+            const page =
+                await fetchWebsite(url);
+
+            const text =
+                normalize(
+                    htmlToText(page.body)
+                );
+
+            let score = 0;
+
+            const indicators = [];
+
+
+            /* GOVERNMENT DOMAIN */
+
+            const government =
+                isGovernmentDomain(
+                    parsed.hostname
+                );
+
+            if (government) {
+
+                indicators.push({
+                    icon: "🇮🇳",
+                    text:
+                        "Government-domain format detected",
+                    level: "low"
+                });
+
+            } else {
+
+                score += 20;
+
+                indicators.push({
+                    icon: "🌐",
+                    text:
+                        "Non-government domain",
+                    level: "medium"
+                });
+            }
+
+
+            /* WEBSITE CONTENT */
+
+            if (contains(text, RULES.payment)) {
+
+                score += 30;
+
+                indicators.push({
+                    icon: "💰",
+                    text:
+                        "Payment/fee request detected",
+                    level: "high"
+                });
+            }
+
+
+            if (contains(text, RULES.review)) {
+
+                score += 25;
+
+                indicators.push({
+                    icon: "⭐",
+                    text:
+                        "Product-review work indicator detected",
+                    level: "high"
+                });
+            }
+
+
+            if (contains(text, RULES.messaging)) {
+
+                score += 12;
+
+                indicators.push({
+                    icon: "📱",
+                    text:
+                        "Messaging-only contact detected",
+                    level: "medium"
+                });
+            }
+
+
+            if (contains(text, RULES.urgency)) {
+
+                score += 10;
+
+                indicators.push({
+                    icon: "⏱️",
+                    text:
+                        "Urgency language detected",
+                    level: "medium"
+                });
+            }
+
+
+            if (contains(text, RULES.personal)) {
+
+                score += 15;
+
+                indicators.push({
+                    icon: "🔐",
+                    text:
+                        "Sensitive personal information requested",
+                    level: "high"
+                });
+            }
+
+
+            score =
+                Math.min(score, 100);
+
+
+            let verdict;
+
+            if (score >= 70) {
+
+                verdict =
+                    "HIGH RECRUITMENT RISK";
+
+            } else if (score >= 35) {
+
+                verdict =
+                    "SUSPICIOUS RECRUITMENT RISK";
+
+            } else {
+
+                verdict =
+                    "LOW RECRUITMENT RISK";
+            }
+
+
+            res.json({
+
+                url,
+
+                governmentDomain:
+                    government,
+
+                riskScore:
+                    score,
+
+                verdict,
+
+                inspection:
+                    "Server-side inspection completed",
+
+                responseStatus:
+                    page.status,
+
+                mea: {
+                    status:
+                        "Check official eMigrate records"
+                },
+
+                indicators
+            });
+
+        } catch (error) {
+
+            console.error(error);
+
+            res.status(400).json({
+
+                error:
+                    error.message ||
+                    "Unable to inspect website."
+            });
+        }
+    }
+);
+
+
+/* =========================================================
+   GOVERNMENT DOMAIN
+========================================================= */
+
+function isGovernmentDomain(hostname) {
+
+    const host =
+        hostname
+            .toLowerCase()
+            .replace(/^www\./, "");
+
+    return (
+        host === "gov.in" ||
+        host.endsWith(".gov.in")
+    );
+}
+
+
+/* =========================================================
+   HEALTH CHECK
+========================================================= */
+
+app.get("/api/health", (req, res) => {
+
+    res.json({
+        status: "online",
+        application: "DruVictor-X Royal Verifier"
+    });
+
+});
+
+
+/* =========================================================
+   START
+========================================================= */
+
+app.listen(PORT, () => {
+
+    console.log(
+        `DruVictor-X running at http://localhost:${PORT}`
+    );
+
+});
