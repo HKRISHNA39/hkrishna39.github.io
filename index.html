@@ -1,2498 +1,1180 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+
+<meta name="description"
+content="DruVictor-X Royal Verifier - multilingual recruitment advertisement and website risk assessment.">
+
+<meta name="author"
+content="Hananya Pothabathina">
+
+<meta name="creator"
+content="Hananya Pothabathina">
+
+<meta name="copyright"
+content="© 2026 Hananya Pothabathina">
 
 <title>DruVictor-X Royal Verifier</title>
 
-<meta
-    name="description"
-    content="DruVictor-X Royal Verifier - Multilingual recruitment advertisement and website risk assessment system."
->
-
-<meta
-    name="keywords"
-    content="DruVictor-X, Royal Verifier, job verification, recruitment scam detection, job advertisement verification"
->
 
 <style>
-/* =========================================================
-   DRUIVICTOR-X ROYAL VERIFIER
-   BRAND-NEW OFFLINE-SAFE VERSION
-   ========================================================= */
 
-:root {
-    --bg: #090909;
-    --panel: #111111;
-    --panel-2: #151515;
-    --gold: #d4a62a;
-    --gold-light: #f0c84b;
-    --gold-dark: #9b7410;
-    --text: #f4f4f4;
-    --muted: #a7a7a7;
-    --border: #4f3b08;
-    --green: #25d366;
-    --yellow: #f4c542;
-    --orange: #ff8c42;
-    --red: #ff4545;
-    --shadow: 0 12px 35px rgba(0,0,0,.45);
+*{
+    box-sizing:border-box;
 }
 
-* {
-    box-sizing: border-box;
+body{
+    margin:0;
+    background:#050505;
+    color:#ead9a0;
+    font-family:Arial,sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+header{
+    text-align:center;
+    padding:35px 15px 20px;
 }
 
-body {
-    margin: 0;
-    background:
-        radial-gradient(circle at top, #181818 0%, #090909 42%, #050505 100%);
-    color: var(--text);
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-    min-height: 100vh;
+.logo{
+    font-size:44px;
+    font-weight:800;
+    letter-spacing:3px;
+    color:#d4af37;
 }
 
-button,
-textarea,
-input,
-select {
-    font: inherit;
+.tag{
+    margin-top:7px;
+    color:#8e7738;
+    font-size:11px;
+    letter-spacing:3px;
 }
 
-button {
-    cursor: pointer;
+.author{
+    margin-top:13px;
+    color:#d4af37;
+    font-weight:700;
 }
 
-.container {
-    width: min(1100px, 94%);
-    margin: 0 auto;
-    padding: 25px 0 50px;
+.container{
+    width:92%;
+    max-width:900px;
+    margin:auto;
 }
 
-/* =========================================================
-   HEADER
-   ========================================================= */
-
-.header {
-    text-align: center;
-    padding: 20px 10px 30px;
+.card{
+    background:#0b0b0b;
+    border:1px solid #5d491b;
+    border-radius:20px;
+    padding:28px;
+    box-shadow:0 20px 60px #000;
 }
 
-.logo {
-    font-size: clamp(28px, 5vw, 48px);
-    font-weight: 900;
-    letter-spacing: 1px;
-    color: var(--gold-light);
-    text-shadow:
-        0 0 15px rgba(212,166,42,.2);
+.modes{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
 }
 
-.logo span {
-    color: white;
+.mode{
+    flex:1;
+    padding:15px;
+    border-radius:9px;
+    border:1px solid #5d491b;
+    background:#080808;
+    color:#c6ae69;
+    font-weight:800;
+    cursor:pointer;
 }
 
-.subtitle {
-    margin: 10px auto 0;
-    color: var(--muted);
-    max-width: 800px;
-    line-height: 1.6;
-    font-size: 15px;
-}
-
-/* =========================================================
-   LANGUAGE
-   ========================================================= */
-
-.language-box {
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 18px;
-}
-
-.language-box select {
-    background: #111;
-    color: white;
-    border: 1px solid var(--gold-dark);
-    border-radius: 8px;
-    padding: 9px 12px;
-    outline: none;
-}
-
-/* =========================================================
-   NAVIGATION TABS
-   ========================================================= */
-
-.tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 20px;
-}
-
-.tab {
-    border: 1px solid var(--border);
-    background: #101010;
-    color: #ddd;
-    border-radius: 10px;
-    padding: 14px;
-    font-weight: 800;
-    transition: .2s ease;
-}
-
-.tab:hover {
-    border-color: var(--gold);
-}
-
-.tab.active {
-    background: linear-gradient(
+.mode.active{
+    background:linear-gradient(
         135deg,
-        #a97b0d,
-        #e2b738
+        #9b7317,
+        #f1d05b,
+        #b68a20
     );
-    color: #080808;
-    border-color: var(--gold-light);
+
+    color:#050505;
 }
 
-/* =========================================================
-   CARD
-   ========================================================= */
-
-.card {
-    background:
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.035),
-            rgba(255,255,255,.01)
-        ),
-        var(--panel);
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 22px;
-    margin-bottom: 20px;
-    box-shadow: var(--shadow);
+h2{
+    color:#d4af37;
 }
 
-.card h2 {
-    margin: 0 0 8px;
-    color: var(--gold-light);
-    font-size: 22px;
+.description{
+    color:#a99b72;
+    line-height:1.7;
 }
 
-.card-description {
-    color: var(--muted);
-    line-height: 1.6;
-    margin-bottom: 18px;
+input,
+textarea{
+
+    width:100%;
+
+    background:#050505;
+
+    color:#f1e4bd;
+
+    border:1px solid #5d491b;
+
+    border-radius:9px;
+
+    padding:16px;
+
+    margin:12px 0;
+
+    font:inherit;
+
+    outline:none;
 }
 
-/* =========================================================
-   FORM
-   ========================================================= */
-
-textarea,
-input[type="text"],
-input[type="url"] {
-    width: 100%;
-    background: #050505;
-    color: white;
-    border: 1px solid #5d4811;
-    border-radius: 10px;
-    outline: none;
-    padding: 15px;
-    transition: .2s ease;
+textarea{
+    height:250px;
+    resize:vertical;
 }
 
-textarea {
-    min-height: 250px;
-    resize: vertical;
-    line-height: 1.5;
+input:focus,
+textarea:focus{
+    border-color:#d4af37;
 }
 
-textarea:focus,
-input:focus {
-    border-color: var(--gold-light);
-    box-shadow: 0 0 0 2px rgba(240,200,75,.08);
+.verify{
+
+    width:100%;
+
+    padding:17px;
+
+    border:0;
+
+    border-radius:9px;
+
+    background:linear-gradient(
+        135deg,
+        #9b7317,
+        #f1d05b,
+        #b68a20
+    );
+
+    color:#050505;
+
+    font-weight:800;
+
+    cursor:pointer;
+
+    font-size:15px;
 }
 
-textarea::placeholder,
-input::placeholder {
-    color: #777;
+.hidden{
+    display:none;
 }
 
-/* =========================================================
-   BUTTONS
-   ========================================================= */
+.result{
 
-.button-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    margin-top: 15px;
+    display:none;
+
+    margin-top:25px;
+
+    padding:25px;
+
+    border-radius:15px;
 }
 
-.main-button {
-    border: none;
-    border-radius: 10px;
-    padding: 15px 18px;
-    font-weight: 900;
-    background:
-        linear-gradient(
-            135deg,
-            #ad7d0d,
-            #e7bd42
-        );
-    color: #080808;
-    transition: .2s ease;
+.result.safe{
+    background:#07150b;
+    border:1px solid #3d9b5b;
 }
 
-.main-button:hover {
-    transform: translateY(-1px);
-    filter: brightness(1.08);
+.result.warn{
+    background:#211603;
+    border:1px solid #d69a22;
 }
 
-.secondary-button {
-    border: 1px solid #604a12;
-    border-radius: 10px;
-    padding: 15px 18px;
-    font-weight: 800;
-    background: #171717;
-    color: #ddd;
+.result.danger{
+    background:#210806;
+    border:1px solid #d64032;
 }
 
-.secondary-button:hover {
-    border-color: var(--gold);
+.result.info{
+    background:#101318;
+    border:1px solid #64748b;
 }
 
-/* =========================================================
-   RESULT
-   ========================================================= */
-
-.hidden {
-    display: none !important;
+.status{
+    text-align:center;
+    font-size:24px;
+    font-weight:800;
 }
 
-.result {
-    margin-top: 20px;
-    border-radius: 14px;
-    padding: 22px;
-    border: 1px solid;
-    animation: appear .3s ease;
+.safeText{
+    color:#55e884;
 }
 
-@keyframes appear {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
+.warnText{
+    color:#ffd34d;
+}
+
+.dangerText{
+    color:#ff5c50;
+}
+
+.infoText{
+    color:#8fc7ff;
+}
+
+.score{
+    text-align:center;
+    font-size:46px;
+    font-weight:800;
+    margin:15px;
+}
+
+.infoRow{
+    border-bottom:1px solid #29210d;
+    padding:13px 0;
+}
+
+.label{
+    color:#857653;
+    font-size:11px;
+    text-transform:uppercase;
+}
+
+.value{
+    color:#eee0b5;
+    font-weight:700;
+    margin-top:5px;
+    word-break:break-word;
+}
+
+.indicator{
+    padding:10px;
+    margin:7px 0;
+    border-radius:7px;
+    font-weight:700;
+}
+
+.indicator.high{
+    color:#ff6b60;
+    background:#300b08;
+}
+
+.indicator.medium{
+    color:#ffd34d;
+    background:#302305;
+}
+
+.indicator.low{
+    color:#55e884;
+    background:#092616;
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+    margin-top:25px;
+}
+
+.actions a{
+    flex:1;
+    padding:15px;
+    border-radius:9px;
+    text-align:center;
+    text-decoration:none;
+    font-weight:800;
+}
+
+.emigrate{
+    background:#d4af37;
+    color:#050505;
+}
+
+.mea{
+    background:#1e6b4d;
+    color:white;
+}
+
+.report{
+    background:#42140f;
+    color:#f0dca5;
+}
+
+.note{
+    text-align:center;
+    color:#807250;
+    font-size:11px;
+    line-height:1.7;
+    margin-top:20px;
+}
+
+footer{
+    text-align:center;
+    padding:35px;
+    color:#665522;
+    font-size:11px;
+}
+
+@media(max-width:650px){
+
+    .modes,
+    .actions{
+        flex-direction:column;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .logo{
+        font-size:34px;
+    }
+
+    .card{
+        padding:20px;
     }
 }
 
-.result.high {
-    background: rgba(110, 0, 0, .28);
-    border-color: #ff3e3e;
-}
-
-.result.suspicious {
-    background: rgba(115, 75, 0, .25);
-    border-color: #f0bd31;
-}
-
-.result.low {
-    background: rgba(0, 90, 45, .2);
-    border-color: #27d76f;
-}
-
-.result-title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 20px;
-}
-
-.score-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 18px;
-}
-
-.score-circle {
-    width: 145px;
-    height: 145px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background:
-        radial-gradient(circle, #111 57%, transparent 58%),
-        conic-gradient(
-            var(--score-color) var(--score-degree),
-            #292929 0deg
-        );
-}
-
-.score-number {
-    font-size: 40px;
-    font-weight: 900;
-}
-
-.score-label {
-    color: #aaa;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.risk-message {
-    text-align: center;
-    color: #ddd;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-/* =========================================================
-   INDICATORS
-   ========================================================= */
-
-.indicators {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.indicator {
-    background: rgba(0,0,0,.25);
-    border: 1px solid #393939;
-    border-radius: 10px;
-    padding: 13px;
-}
-
-.indicator strong {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.indicator small {
-    color: #aaa;
-    line-height: 1.4;
-}
-
-/* =========================================================
-   DETAILS
-   ========================================================= */
-
-.details-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.detail-box {
-    background: #0b0b0b;
-    border: 1px solid #303030;
-    border-radius: 10px;
-    padding: 15px;
-}
-
-.detail-box h3 {
-    color: var(--gold-light);
-    margin-top: 0;
-}
-
-.detail-box ul {
-    margin: 0;
-    padding-left: 20px;
-}
-
-.detail-box li {
-    margin: 8px 0;
-    color: #ccc;
-    word-break: break-word;
-}
-
-/* =========================================================
-   WEBSITE MODE
-   ========================================================= */
-
-.website-mode {
-    display: none;
-}
-
-.website-note {
-    background: rgba(212,166,42,.07);
-    border: 1px solid #55420e;
-    border-radius: 9px;
-    padding: 13px;
-    color: #bbb;
-    line-height: 1.5;
-    margin-bottom: 15px;
-}
-
-/* =========================================================
-   FOOTER
-   ========================================================= */
-
-.footer {
-    text-align: center;
-    color: #666;
-    font-size: 13px;
-    line-height: 1.6;
-    padding-top: 20px;
-}
-
-.footer strong {
-    color: #aaa;
-}
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-
-@media (max-width: 700px) {
-
-    .container {
-        width: 94%;
-        padding-top: 15px;
-    }
-
-    .tabs {
-        grid-template-columns: 1fr;
-    }
-
-    .button-row {
-        grid-template-columns: 1fr;
-    }
-
-    .indicators,
-    .details-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .card {
-        padding: 16px;
-    }
-
-    textarea {
-        min-height: 300px;
-    }
-}
 </style>
+
 </head>
+
 
 <body>
 
+
+<header>
+
+<div class="logo">
+DruVictor-X
+</div>
+
+<div class="tag">
+ROYAL VERIFIER • SAFE MIGRATION
+</div>
+
+<div class="author">
+By Hananya Krishna
+</div>
+
+</header>
+
+
 <div class="container">
 
-    <!-- =====================================================
-         HEADER
-         ===================================================== -->
+<div class="card">
 
-    <header class="header">
 
-        <div class="logo">
-            DruVictor<span>-X</span>
-            <br>
-            <small style="font-size:.48em;">
-                ROYAL VERIFIER
-            </small>
-        </div>
+<div class="modes">
 
-        <p class="subtitle" id="subtitle">
-            Multilingual recruitment safety and job advertisement
-            risk assessment system.
-        </p>
+<button
+id="websiteMode"
+class="mode active">
 
-    </header>
+🔗 CHECK WEBSITE
 
-    <!-- =====================================================
-         LANGUAGE
-         ===================================================== -->
+</button>
 
-    <div class="language-box">
 
-        <select id="languageSelector">
+<button
+id="adMode"
+class="mode">
 
-            <option value="en">English</option>
-            <option value="hi">हिन्दी</option>
-            <option value="te">తెలుగు</option>
-            <option value="ta">தமிழ்</option>
-            <option value="bn">বাংলা</option>
-            <option value="roman">Romanized</option>
+📄 VERIFY ADVERTISEMENT
 
-        </select>
-
-    </div>
-
-    <!-- =====================================================
-         MODE TABS
-         ===================================================== -->
-
-    <div class="tabs">
-
-        <button
-            class="tab active"
-            id="adTab"
-            type="button"
-        >
-            📄 VERIFY ADVERTISEMENT
-        </button>
-
-        <button
-            class="tab"
-            id="websiteTab"
-            type="button"
-        >
-            🌐 VERIFY WEBSITE
-        </button>
-
-    </div>
-
-    <!-- =====================================================
-         ADVERTISEMENT MODE
-         ===================================================== -->
-
-    <section
-        class="card"
-        id="advertisementMode"
-    >
-
-        <h2 id="adHeading">
-            📄 Verify Job Advertisement
-        </h2>
-
-        <p
-            class="card-description"
-            id="adDescription"
-        >
-            Paste the complete advertisement. DruVictor-X detects
-            recruitment warning signs and extracts MEA/Recruiting
-            Agent licence information when present.
-        </p>
-
-        <textarea
-            id="advertisementText"
-            spellcheck="true"
-            placeholder="Paste the complete job advertisement here..."
-        ></textarea>
-
-        <div class="button-row">
-
-            <button
-                class="main-button"
-                id="verifyAdvertisement"
-                type="button"
-            >
-                🔐 VERIFY ADVERTISEMENT
-            </button>
-
-            <button
-                class="secondary-button"
-                id="exampleButton"
-                type="button"
-            >
-                🧪 LOAD TEST AD
-            </button>
-
-            <button
-                class="secondary-button"
-                id="clearButton"
-                type="button"
-            >
-                🗑 CLEAR
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- =====================================================
-         WEBSITE MODE
-         ===================================================== -->
-
-    <section
-        class="card website-mode"
-        id="websiteMode"
-    >
-
-        <h2>
-            🌐 Verify Recruitment Website
-        </h2>
-
-        <p class="card-description">
-            Enter the recruitment website URL for a basic
-            browser-side safety check.
-        </p>
-
-        <div class="website-note">
-            ⚠️ Some websites block browser security requests
-            using CORS. DruVictor-X will never display a
-            misleading failure as a verification result.
-            If direct inspection is blocked, the system will
-            explain the limitation and provide local checks.
-        </div>
-
-        <input
-            id="websiteUrl"
-            type="url"
-            placeholder="https://example.com"
-        >
-
-        <div class="button-row">
-
-            <button
-                class="main-button"
-                id="verifyWebsite"
-                type="button"
-            >
-                🔐 VERIFY WEBSITE
-            </button>
-
-            <button
-                class="secondary-button"
-                id="openWebsite"
-                type="button"
-            >
-                ↗ OPEN WEBSITE
-            </button>
-
-            <button
-                class="secondary-button"
-                id="clearWebsite"
-                type="button"
-            >
-                🗑 CLEAR
-            </button>
-
-        </div>
-
-    </section>
-
-    <!-- =====================================================
-         RESULT
-         ===================================================== -->
-
-    <section
-        class="result hidden"
-        id="result"
-    >
-
-        <div
-            class="result-title"
-            id="resultTitle"
-        >
-            VERIFICATION RESULT
-        </div>
-
-        <div class="score-wrapper">
-
-            <div
-                class="score-circle"
-                id="scoreCircle"
-            >
-
-                <div
-                    class="score-number"
-                    id="scoreNumber"
-                >
-                    0
-                </div>
-
-                <div class="score-label">
-                    RISK SCORE
-                </div>
-
-            </div>
-
-        </div>
-
-        <div
-            class="risk-message"
-            id="riskMessage"
-        ></div>
-
-        <div
-            class="indicators"
-            id="indicators"
-        ></div>
-
-        <div class="details-grid">
-
-            <div class="detail-box">
-
-                <h3>🔎 Detected Information</h3>
-
-                <ul id="detectedInfo">
-                    <li>No information extracted yet.</li>
-                </ul>
-
-            </div>
-
-            <div class="detail-box">
-
-                <h3>⚠️ Risk Reasons</h3>
-
-                <ul id="riskReasons">
-                    <li>No risk reasons detected.</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
-
-    <footer class="footer">
-
-        <strong>DruVictor-X Royal Verifier</strong>
-        <br>
-
-        Recruitment safety assessment tool.
-        Results are automated indicators and should be
-        independently verified.
-
-        <br><br>
-
-        <span>
-            By Hananya Krishna
-        </span>
-
-    </footer>
+</button>
 
 </div>
 
+
+<section id="websiteSection">
+
+<h2>
+🔎 Check Job Website
+</h2>
+
+<p class="description">
+
+Enter a website URL. DruVictor-X checks it
+through the server instead of directly loading
+the target website in your browser.
+
+</p>
+
+<input
+id="websiteURL"
+type="text"
+placeholder="https://example.com">
+
+<button
+id="websiteButton"
+class="verify">
+
+🔐 SECURELY CHECK WEBSITE
+
+</button>
+
+</section>
+
+
+<section
+id="advertisementSection"
+class="hidden">
+
+<h2>
+📄 Verify Job Advertisement
+</h2>
+
+<p class="description">
+
+Paste the complete job advertisement.
+DruVictor-X detects recruitment warning signs
+and extracts MEA/Recruiting Agent licence
+information when present.
+
+</p>
+
+<textarea
+id="advertisementText"
+placeholder="Paste the complete job advertisement here..."></textarea>
+
+
+<button
+id="advertisementButton"
+class="verify">
+
+🔐 VERIFY ADVERTISEMENT
+
+</button>
+
+</section>
+
+
+<div
+id="result"
+class="result">
+
+</div>
+
+
+</div>
+</div>
+
+
+<footer>
+
+DruVictor-X © 2026
+
+<br><br>
+
+Science & Innovation for Sustainability
+
+</footer>
+
+
 <script>
-/* =========================================================
-   DRUIVICTOR-X ROYAL VERIFIER
-   OFFLINE ADVERTISEMENT ANALYSIS ENGINE
-   ========================================================= */
 
 "use strict";
 
-/* =========================================================
-   DOM
-   ========================================================= */
-
-const advertisementMode =
-    document.getElementById("advertisementMode");
 
 const websiteMode =
-    document.getElementById("websiteMode");
+document.getElementById("websiteMode");
 
-const adTab =
-    document.getElementById("adTab");
+const adMode =
+document.getElementById("adMode");
 
-const websiteTab =
-    document.getElementById("websiteTab");
+const websiteSection =
+document.getElementById("websiteSection");
+
+const advertisementSection =
+document.getElementById("advertisementSection");
+
+const websiteButton =
+document.getElementById("websiteButton");
+
+const advertisementButton =
+document.getElementById("advertisementButton");
+
+const websiteURL =
+document.getElementById("websiteURL");
 
 const advertisementText =
-    document.getElementById("advertisementText");
-
-const websiteUrl =
-    document.getElementById("websiteUrl");
+document.getElementById("advertisementText");
 
 const result =
-    document.getElementById("result");
+document.getElementById("result");
 
-const resultTitle =
-    document.getElementById("resultTitle");
-
-const scoreNumber =
-    document.getElementById("scoreNumber");
-
-const scoreCircle =
-    document.getElementById("scoreCircle");
-
-const riskMessage =
-    document.getElementById("riskMessage");
-
-const indicators =
-    document.getElementById("indicators");
-
-const detectedInfo =
-    document.getElementById("detectedInfo");
-
-const riskReasons =
-    document.getElementById("riskReasons");
-
-const languageSelector =
-    document.getElementById("languageSelector");
 
 /* =========================================================
-   TRANSLATIONS
-   ========================================================= */
+   HTML ESCAPING
+========================================================= */
 
-const translations = {
-
-    en: {
-        subtitle:
-            "Multilingual recruitment safety and job advertisement risk assessment system.",
-
-        heading:
-            "📄 Verify Job Advertisement",
-
-        description:
-            "Paste the complete advertisement. DruVictor-X detects recruitment warning signs and extracts MEA/Recruiting Agent licence information when present.",
-
-        placeholder:
-            "Paste the complete job advertisement here..."
-    },
-
-    hi: {
-        subtitle:
-            "बहुभाषी भर्ती सुरक्षा और नौकरी विज्ञापन जोखिम मूल्यांकन प्रणाली।",
-
-        heading:
-            "📄 नौकरी विज्ञापन सत्यापित करें",
-
-        description:
-            "पूरा नौकरी विज्ञापन पेस्ट करें। DruVictor-X भर्ती से जुड़े चेतावनी संकेतों की पहचान करता है और उपलब्ध होने पर MEA/Recruiting Agent लाइसेंस जानकारी निकालता है।",
-
-        placeholder:
-            "पूरा नौकरी विज्ञापन यहाँ पेस्ट करें..."
-    },
-
-    te: {
-        subtitle:
-            "బహుభాషా నియామక భద్రత మరియు ఉద్యోగ ప్రకటన ప్రమాద అంచనా వ్యవస్థ.",
-
-        heading:
-            "📄 ఉద్యోగ ప్రకటనను ధృవీకరించండి",
-
-        description:
-            "పూర్తి ఉద్యోగ ప్రకటనను ఇక్కడ పేస్ట్ చేయండి. DruVictor-X నియామక హెచ్చరిక సంకేతాలను గుర్తిస్తుంది మరియు ఉన్నప్పుడు MEA/Recruiting Agent లైసెన్స్ సమాచారాన్ని వెలికితీస్తుంది.",
-
-        placeholder:
-            "పూర్తి ఉద్యోగ ప్రకటనను ఇక్కడ పేస్ట్ చేయండి..."
-    },
-
-    ta: {
-        subtitle:
-            "பலமொழி ஆட்சேர்ப்பு பாதுகாப்பு மற்றும் வேலை விளம்பர அபாய மதிப்பீட்டு அமைப்பு.",
-
-        heading:
-            "📄 வேலை விளம்பரத்தை சரிபார்க்கவும்",
-
-        description:
-            "முழு வேலை விளம்பரத்தையும் ஒட்டவும். DruVictor-X ஆட்சேர்ப்பு எச்சரிக்கை அறிகுறிகளை கண்டறிந்து, கிடைக்கும் போது MEA/Recruiting Agent உரிமத் தகவலை பிரித்தெடுக்கிறது.",
-
-        placeholder:
-            "முழு வேலை விளம்பரத்தையும் இங்கே ஒட்டவும்..."
-    },
-
-    bn: {
-        subtitle:
-            "বহুভাষিক নিয়োগ নিরাপত্তা এবং চাকরির বিজ্ঞাপন ঝুঁকি মূল্যায়ন ব্যবস্থা।",
-
-        heading:
-            "📄 চাকরির বিজ্ঞাপন যাচাই করুন",
-
-        description:
-            "সম্পূর্ণ চাকরির বিজ্ঞাপন পেস্ট করুন। DruVictor-X নিয়োগ সংক্রান্ত সতর্কতা শনাক্ত করে এবং থাকলে MEA/Recruiting Agent লাইসেন্স তথ্য বের করে।",
-
-        placeholder:
-            "সম্পূর্ণ চাকরির বিজ্ঞাপন এখানে পেস্ট করুন..."
-    },
-
-    roman: {
-        subtitle:
-            "Bahubhasha recruitment safety aur job advertisement risk assessment system.",
-
-        heading:
-            "📄 Job Advertisement Verify Karein",
-
-        description:
-            "Complete advertisement paste karein. DruVictor-X recruitment warning signs detect karta hai aur available hone par MEA/Recruiting Agent licence information extract karta hai.",
-
-        placeholder:
-            "Complete job advertisement yahan paste karein..."
-    }
-};
-
-/* =========================================================
-   MULTILINGUAL RISK RULES
-   ========================================================= */
-
-const RULES = {
-
-    PAYMENT: {
-
-        label: "PAYMENT / UPFRONT MONEY",
-
-        weight: 32,
-
-        patterns: [
-
-            /pay\s+(?:the\s+)?(?:product|item|fee|amount|money)\s+upfront/i,
-            /pay\s+upfront/i,
-            /upfront\s+(?:fee|payment|cost)/i,
-            /registration\s+fee/i,
-            /joining\s+fee/i,
-            /security\s+deposit/i,
-            /deposit\s+(?:money|amount|fee)/i,
-            /pay\s+before/i,
-            /send\s+money/i,
-            /advance\s+payment/i,
-            /processing\s+fee/i,
-            /training\s+fee/i,
-            /membership\s+fee/i,
-            /pay\s+for\s+(?:the\s+)?job/i,
-
-            /पहले\s+पैसे/i,
-            /अग्रिम\s+भुगतान/i,
-            /रजिस्ट्रेशन\s+फीस/i,
-            /जॉइनिंग\s+फीस/i,
-            /सिक्योरिटी\s+डिपॉजिट/i,
-            /पैसे\s+जमा/i,
-            /पैसे\s+भुगतान/i,
-
-            /ముందుగా\s+డబ్బు/i,
-            /అడ్వాన్స్\s+చెల్లింపు/i,
-            /రిజిస్ట్రేషన్\s+ఫీజు/i,
-            /జాయినింగ్\s+ఫీజు/i,
-            /డిపాజిట్\s+చెల్లించ/i,
-
-            /முன்பணம்/i,
-            /பதிவு\s+கட்டணம்/i,
-            /சேர்க்கை\s+கட்டணம்/i,
-            /பணம்\s+செலுத்த/i,
-
-            /অগ্রিম\s+পেমেন্ট/i,
-            /রেজিস্ট্রেশন\s+ফি/i,
-            /জয়েনিং\s+ফি/i,
-            /টাকা\s+পাঠান/i,
-
-            /advance\s+lo\s+payment/i,
-            /pahle\s+paisa/i,
-            /registration\s+fee\s+dena/i,
-            /joining\s+fee\s+dena/i
-        ]
-    },
-
-    FAKE_REVIEW: {
-
-        label: "FAKE REVIEW / RATING ACTIVITY",
-
-        weight: 22,
-
-        patterns: [
-
-            /write\s+(?:a\s+)?(?:5|five)[-\s]?star\s+review/i,
-            /give\s+(?:a\s+)?(?:5|five)[-\s]?star\s+rating/i,
-            /positive\s+review/i,
-            /fake\s+review/i,
-            /boost\s+ratings/i,
-            /boost\s+reviews/i,
-            /review\s+products\s+for\s+money/i,
-            /submit(?:ting)?\s+(?:a\s+)?review/i,
-
-            /फाइव[-\s]?स्टार\s+रिव्यू/i,
-            /5[-\s]?स्टार\s+रिव्यू/i,
-            /सकारात्मक\s+रिव्यू/i,
-            /रेटिंग\s+बढ़ाने/i,
-
-            /5[-\s]?స్టార్\s+రివ్యూ/i,
-            /5[-\s]?స్టార్\s+రేటింగ్/i,
-            /పాజిటివ్\s+రివ్యూ/i,
-
-            /5[-\s]?ஸ்டார்\s+ரிவ்யூ/i,
-            /மதிப்பீடு\s+அதிகரிக்க/i,
-
-            /5[-\s]?স্টার\s+রিভিউ/i,
-            /পজিটিভ\s+রিভিউ/i,
-
-            /5\s*star\s+review\s+ivvu/i,
-            /positive\s+review\s+ivvu/i
-        ]
-    },
-
-    EXPERIENCE: {
-
-        label: "NO EXPERIENCE / EASY MONEY CLAIM",
-
-        weight: 14,
-
-        patterns: [
-
-            /no\s+(?:experience|qualification)\s+(?:required|needed)/i,
-            /no\s+experience\s+needed/i,
-            /no\s+experience\s+required/i,
-            /anyone\s+can\s+apply/i,
-            /anyone\s+can\s+earn/i,
-            /easy\s+money/i,
-            /earn\s+quickly/i,
-            /work\s+without\s+experience/i,
-            /freshers?\s+welcome/i,
-
-            /कोई\s+अनुभव\s+आवश्यक\s+नहीं/i,
-            /बिना\s+अनुभव/i,
-            /कोई\s+योग्यता\s+नहीं/i,
-            /आसानी\s+से\s+कमाएं/i,
-
-            /అనుభవం\s+అవసరం\s+లేదు/i,
-            /అర్హత\s+అవసరం\s+లేదు/i,
-            /సులభంగా\s+డబ్బు/i,
-
-            /அனுபவம்\s+தேவையில்லை/i,
-            /தகுதி\s+தேவையில்லை/i,
-
-            /অভিজ্ঞতা\s+প্রয়োজন\s+নেই/i,
-            /যোগ্যতা\s+প্রয়োজন\s+নেই/i,
-
-            /experience\s+avasaram\s+ledu/i,
-            /qualification\s+avasaram\s+ledu/i
-        ]
-    },
-
-    MESSAGING: {
-
-        label: "MESSAGING APP CONTACT",
-
-        weight: 13,
-
-        patterns: [
-
-            /contact\s+(?:us\s+)?on\s+whatsapp/i,
-            /message\s+us\s+on\s+whatsapp/i,
-            /whatsapp\s+(?:us|me|number)/i,
-            /whatsapp\s+hr/i,
-            /telegram/i,
-            /signal\s+app/i,
-            /dm\s+(?:us|me)/i,
-            /message\s+(?:us|me)\s+to\s+apply/i,
-            /send\s+(?:a\s+)?message\s+to\s+apply/i,
-
-            /व्हाट्सऐप/i,
-            /व्हाट्सएप/i,
-            /टेलीग्राम/i,
-
-            /వాట్సాప్/i,
-            /టెలిగ్రామ్/i,
-
-            /வாட்ஸ்அப்/i,
-            /டெலிகிராம்/i,
-
-            /হোয়াটসঅ্যাপ/i,
-            /টেলিগ্রাম/i,
-
-            /whatsapp\s+lo\s+contact/i,
-            /telegram\s+lo\s+contact/i
-        ]
-    },
-
-    URGENCY: {
-
-        label: "URGENCY / PRESSURE",
-
-        weight: 12,
-
-        patterns: [
-
-            /apply\s+(?:now|immediately|today)/i,
-            /limited\s+(?:slots|positions|vacancies)/i,
-            /urgent(?:ly)?\s+(?:hiring|apply|join)/i,
-            /act\s+now/i,
-            /last\s+chance/i,
-            /within\s+\d+\s+minutes?/i,
-            /immediately/i,
-            /hurry/i,
-            /don't\s+miss/i,
-            /instant\s+(?:joining|approval|payment)/i,
-
-            /तुरंत\s+आवेदन/i,
-            /अभी\s+आवेदन/i,
-            /सीमित\s+सीट/i,
-            /जल्दी\s+करें/i,
-
-            /వెంటనే\s+అప్లై/i,
-            /ఇప్పుడే\s+దరఖాస్తు/i,
-            /పరిమిత\s+స్థానాలు/i,
-
-            /உடனே\s+விண்ணப்பிக்க/i,
-            /அவசரம்/i,
-
-            /এখনই\s+আবেদন/i,
-            /সীমিত\s+পদ/i,
-            /তাড়াতাড়ি/i
-        ]
-    },
-
-    PERSONAL_DATA: {
-
-        label: "SENSITIVE PERSONAL DATA",
-
-        weight: 18,
-
-        patterns: [
-
-            /send\s+(?:your\s+)?(?:aadhaar|aadhar)/i,
-            /send\s+(?:your\s+)?pan\s+card/i,
-            /send\s+(?:your\s+)?passport/i,
-            /send\s+(?:your\s+)?bank\s+(?:account|details)/i,
-            /bank\s+details/i,
-            /card\s+details/i,
-            /otp/i,
-            /one[-\s]?time\s+password/i,
-            /login\s+password/i,
-            /netbanking/i,
-            /upload\s+(?:your\s+)?id/i,
-            /identity\s+proof/i,
-            /government\s+id/i,
-
-            /आधार/i,
-            /पैन\s+कार्ड/i,
-            /पासपोर्ट/i,
-            /बैंक\s+विवरण/i,
-            /ओटीपी/i,
-            /पासवर्ड/i,
-
-            /ఆధార్/i,
-            /పాన్\s+కార్డ్/i,
-            /పాస్‌పోర్ట్/i,
-            /బ్యాంక్\s+వివరాలు/i,
-            /ఓటీపీ/i,
-            /పాస్‌వర్డ్/i,
-
-            /ஆதார்/i,
-            /பான்\s+கார்டு/i,
-            /வங்கி\s+விவரங்கள்/i,
-            /ஓடிபி/i,
-            /கடவுச்சொல்/i,
-
-            /আধার/i,
-            /প্যান\s+কার্ড/i,
-            /পাসপোর্ট/i,
-            /ব্যাংক\s+বিস্তারিত/i,
-            /ওটিপি/i,
-            /পাসওয়ার্ড/i
-        ]
-    },
-
-    FOREIGN: {
-
-        label: "FOREIGN / OVERSEAS RECRUITMENT",
-
-        weight: 10,
-
-        patterns: [
-
-            /work\s+abroad/i,
-            /overseas\s+job/i,
-            /foreign\s+job/i,
-            /international\s+job/i,
-            /visa\s+provided/i,
-            /visa\s+guarantee/i,
-            /work\s+permit\s+provided/i,
-            /flight\s+ticket\s+provided/i,
-            /100%\s+visa/i,
-
-            /विदेश\s+में\s+नौकरी/i,
-            /विदेशी\s+नौकरी/i,
-            /वीज़ा\s+गारंटी/i,
-
-            /విదేశీ\s+ఉద్యోగం/i,
-            /వీసా\s+గ్యారంటీ/i,
-
-            /வெளிநாட்டு\s+வேலை/i,
-            /விசா\s+உத்தரவாதம்/i,
-
-            /বিদেশে\s+চাকরি/i,
-            /ভিসা\s+গ্যারান্টি/i
-        ]
-    },
-
-    LICENSE: {
-
-        label: "LICENCE / REGISTRATION CLAIM",
-
-        weight: 0,
-
-        patterns: [
-
-            /mea\s+licen[cs]e/i,
-            /recruiting\s+agent\s+licen[cs]e/i,
-            /ra\s+licen[cs]e/i,
-            /registered\s+with\s+mea/i,
-            /government\s+approved/i,
-            /emigrate/i,
-            /license\s+no/i,
-            /licence\s+no/i,
-            /registration\s+no/i
-        ]
-    },
-
-    WEBSITE: {
-
-        label: "WEBSITE / LINK WARNING",
-
-        weight: 8,
-
-        patterns: [
-
-            /bit\.ly/i,
-            /tinyurl/i,
-            /t\.me\//i,
-            /wa\.me\//i,
-            /forms\.gle/i,
-            /goo\.gl/i,
-            /shorturl/i,
-            /click\s+here\s+to\s+apply/i,
-            /apply\s+through\s+this\s+link/i,
-            /download\s+the\s+app\s+to\s+apply/i
-        ]
-    },
-
-    DANGEROUS_FILE: {
-
-        label: "SUSPICIOUS FILE / DOWNLOAD",
-
-        weight: 16,
-
-        patterns: [
-
-            /download\s+(?:this\s+)?(?:apk|exe|zip|rar|bat|scr)/i,
-            /install\s+(?:this\s+)?apk/i,
-            /send\s+(?:the\s+)?apk/i,
-            /\.apk\b/i,
-            /\.exe\b/i,
-            /\.scr\b/i,
-            /\.bat\b/i,
-            /\.cmd\b/i,
-            /\.zip\b/i,
-            /\.rar\b/i
-        ]
-    },
-
-    FAKE_COMPANY: {
-
-        label: "UNVERIFIED COMPANY CLAIM",
-
-        weight: 9,
-
-        patterns: [
-
-            /claims?\s+to\s+partner\s+with/i,
-            /official\s+partner/i,
-            /authorized\s+partner/i,
-            /guaranteed\s+selection/i,
-            /100%\s+job\s+guarantee/i,
-            /guaranteed\s+job/i,
-            /direct\s+selection/i
-        ]
-    }
-
-};
-
-/* =========================================================
-   JOB WORDS
-   ========================================================= */
-
-const JOB_WORDS = [
-
-    "job",
-    "jobs",
-    "career",
-    "careers",
-    "vacancy",
-    "vacancies",
-    "hiring",
-    "recruitment",
-    "recruiting",
-    "employment",
-    "position",
-    "work",
-    "worker",
-    "employee",
-    "salary",
-    "wage",
-    "job title",
-    "apply",
-    "joining",
-    "interview",
-
-    "नौकरी",
-    "रोजगार",
-    "भर्ती",
-    "काम",
-    "वेतन",
-    "आवेदन",
-
-    "ఉద్యోగం",
-    "ఉద్యోగాలు",
-    "నియామకం",
-    "పని",
-    "జీతం",
-
-    "வேலை",
-    "வேலைகள்",
-    "ஆட்சேர்ப்பு",
-    "சம்பளம்",
-
-    "চাকরি",
-    "নিয়োগ",
-    "কাজ",
-    "বেতন"
-];
-
-/* =========================================================
-   TEST ADVERTISEMENT
-   ========================================================= */
-
-const TEST_AD = `
-Fake Job Ad: E-Commerce Product Reviewer
-
-Job Title: Remote Product Reviewer & Quality Evaluator
-
-Company: RetailGrowth Global Ltd. (Claims to partner with Amazon and Flipkart)
-
-Location: 100% Remote / Work from Anywhere
-
-Salary: ₹3,500 – ₹5,000 per day (Flexible hours, 1-2 hours daily)
-
-Job Description:
-We are looking for part-time online product testers to evaluate newly launched items on major e-commerce platforms.
-
-Your job is to boost product visibility by purchasing assigned items, leaving a 5-star review, and submitting a screenshot.
-
-Requirements:
-No qualifications or previous experience needed.
-
-Must own a smartphone with a stable internet connection.
-
-Must have an active UPI ID or bank account to receive immediate payouts.
-
-How it works:
-You pay for the product upfront using your own money.
-
-Within 15 minutes of submitting your review screenshot, we will refund your product cost plus a 20% commission directly to your UPI.
-
-How to Apply:
-WhatsApp our HR Executive immediately at +91 98765 XXXXX with the code "READY TO EARN" to get your first assignment.
-`;
-
-/* =========================================================
-   UTILITIES
-   ========================================================= */
-
-function escapeHTML(value) {
+function escapeHTML(value){
 
     return String(value)
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#039;");
+
+        .replace(/&/g,"&amp;")
+
+        .replace(/</g,"&lt;")
+
+        .replace(/>/g,"&gt;")
+
+        .replace(/"/g,"&quot;")
+
+        .replace(/'/g,"&#039;");
 }
 
+
 /* =========================================================
-   NORMALIZE TEXT
-   ========================================================= */
+   LOADING
+========================================================= */
 
-function normalizeText(text) {
+function loading(message){
 
-    return String(text || "")
-        .replace(/\u00A0/g, " ")
-        .replace(/\r\n/g, "\n")
-        .replace(/\s+/g, " ")
-        .trim();
+    result.className="result info";
+
+    result.style.display="block";
+
+    result.innerHTML=`
+
+        <div class="status infoText">
+
+            ⏳ ${escapeHTML(message)}
+
+        </div>
+
+    `;
 }
 
+
 /* =========================================================
-   DETECT LANGUAGE
-   ========================================================= */
+   ERROR
+========================================================= */
 
-function detectLanguage(text) {
+function showError(message){
 
-    const value = String(text || "");
+    result.className="result danger";
 
-    if (/[\u0900-\u097F]/.test(value)) {
-        return "Hindi / Devanagari";
-    }
+    result.style.display="block";
 
-    if (/[\u0C00-\u0C7F]/.test(value)) {
-        return "Telugu";
-    }
+    result.innerHTML=`
 
-    if (/[\u0B80-\u0BFF]/.test(value)) {
-        return "Tamil";
-    }
+        <div class="status dangerText">
 
-    if (/[\u0980-\u09FF]/.test(value)) {
-        return "Bengali";
-    }
+            ❌ VERIFICATION ERROR
 
-    return "English / Roman";
+        </div>
+
+        <div class="note">
+
+            ${escapeHTML(message)}
+
+        </div>
+
+    `;
 }
 
-/* =========================================================
-   PHONE EXTRACTION
-   ========================================================= */
-
-function extractPhones(text) {
-
-    const matches = text.match(
-        /(?:\+?\d[\d\s().-]{7,}\d)/g
-    ) || [];
-
-    return [...new Set(
-        matches
-            .map(item => item.trim())
-            .filter(item => item.replace(/\D/g, "").length >= 8)
-    )];
-}
 
 /* =========================================================
-   EMAIL EXTRACTION
-   ========================================================= */
+   MODE SWITCH
+========================================================= */
 
-function extractEmails(text) {
+websiteMode.onclick=function(){
 
-    const matches = text.match(
-        /[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi
-    ) || [];
+    websiteSection.classList.remove("hidden");
 
-    return [...new Set(matches)];
-}
+    advertisementSection.classList.add("hidden");
 
-/* =========================================================
-   URL EXTRACTION
-   ========================================================= */
+    websiteMode.classList.add("active");
 
-function extractURLs(text) {
+    adMode.classList.remove("active");
 
-    const matches = text.match(
-        /\b(?:https?:\/\/|www\.)[^\s<>"']+/gi
-    ) || [];
+    result.style.display="none";
+};
 
-    return [...new Set(
-        matches.map(url =>
-            url.replace(/[),.;!?]+$/g, "")
-        )
-    )];
-}
 
-/* =========================================================
-   MONEY EXTRACTION
-   ========================================================= */
+adMode.onclick=function(){
 
-function extractMoney(text) {
+    websiteSection.classList.add("hidden");
 
-    const matches = text.match(
-        /(?:₹|rs\.?|inr|\$|usd|€|eur|£)\s?[\d,]+(?:\.\d+)?(?:\s*[-–]\s*(?:₹|rs\.?|inr|\$|usd|€|eur|£)?\s?[\d,]+(?:\.\d+)?)?/gi
-    ) || [];
+    advertisementSection.classList.remove("hidden");
 
-    return [...new Set(matches)];
-}
+    websiteMode.classList.remove("active");
+
+    adMode.classList.add("active");
+
+    result.style.display="none";
+};
+
 
 /* =========================================================
-   LICENCE EXTRACTION
-   ========================================================= */
+   ADVERTISEMENT
+========================================================= */
 
-function extractLicences(text) {
+advertisementButton.onclick=async function(){
 
-    const found = [];
+    const text =
+        advertisementText.value.trim();
 
-    const patterns = [
 
-        /(?:MEA|RA|Recruiting\s+Agent)\s*(?:Licence|License|No\.?|Number)?\s*[:#-]?\s*([A-Z0-9./-]{3,})/gi,
+    if(!text){
 
-        /(?:Licence|License|Registration)\s*(?:No\.?|Number)?\s*[:#-]\s*([A-Z0-9./-]{3,})/gi
-    ];
-
-    patterns.forEach(pattern => {
-
-        let match;
-
-        while ((match = pattern.exec(text)) !== null) {
-
-            if (match[1]) {
-                found.push(match[1]);
-            }
-        }
-    });
-
-    return [...new Set(found)];
-}
-
-/* =========================================================
-   RULE MATCHING
-   ========================================================= */
-
-function findMatches(text, patterns) {
-
-    const matches = [];
-
-    patterns.forEach(pattern => {
-
-        const match = text.match(pattern);
-
-        if (match) {
-            matches.push(match[0]);
-        }
-
-    });
-
-    return [...new Set(matches)];
-}
-
-/* =========================================================
-   ANALYZE RULES
-   ========================================================= */
-
-function analyzeRules(text) {
-
-    const findings = [];
-
-    let rawScore = 0;
-
-    Object.entries(RULES).forEach(([key, rule]) => {
-
-        const matches =
-            findMatches(text, rule.patterns);
-
-        if (matches.length > 0) {
-
-            rawScore += rule.weight;
-
-            findings.push({
-                key,
-                label: rule.label,
-                weight: rule.weight,
-                matches
-            });
-        }
-    });
-
-    return {
-        findings,
-        rawScore
-    };
-}
-
-/* =========================================================
-   JOB CONTEXT
-   ========================================================= */
-
-function hasJobContext(text) {
-
-    const lower = text.toLowerCase();
-
-    return JOB_WORDS.some(word =>
-        lower.includes(word.toLowerCase())
-    );
-}
-
-/* =========================================================
-   SPECIAL SCORING
-   ========================================================= */
-
-function calculateScore(text, findings) {
-
-    let score = 0;
-
-    findings.forEach(item => {
-        score += item.weight;
-    });
-
-    /*
-       Strong combinations.
-       These make the score reflect multiple
-       connected warning signs.
-    */
-
-    const keys =
-        new Set(findings.map(item => item.key));
-
-    if (
-        keys.has("PAYMENT") &&
-        keys.has("FAKE_REVIEW")
-    ) {
-        score += 15;
-    }
-
-    if (
-        keys.has("PAYMENT") &&
-        keys.has("MESSAGING")
-    ) {
-        score += 8;
-    }
-
-    if (
-        keys.has("PAYMENT") &&
-        keys.has("URGENCY")
-    ) {
-        score += 7;
-    }
-
-    if (
-        keys.has("PERSONAL_DATA") &&
-        keys.has("MESSAGING")
-    ) {
-        score += 6;
-    }
-
-    if (
-        keys.has("FOREIGN") &&
-        keys.has("PAYMENT")
-    ) {
-        score += 8;
-    }
-
-    if (
-        keys.has("DANGEROUS_FILE") &&
-        keys.has("MESSAGING")
-    ) {
-        score += 8;
-    }
-
-    /*
-       Suspicious salary promise.
-    */
-
-    const salaryMatches =
-        extractMoney(text);
-
-    if (
-        salaryMatches.length >= 2 &&
-        /per\s+day|daily|per\s+hour|weekly|monthly/i.test(text)
-    ) {
-        score += 5;
-    }
-
-    /*
-       Job context bonus only prevents
-       random text from being treated as
-       a job advertisement.
-    */
-
-    if (!hasJobContext(text)) {
-        score = Math.min(score, 30);
-    }
-
-    return Math.min(100, Math.max(0, score));
-}
-
-/* =========================================================
-   RISK CLASSIFICATION
-   ========================================================= */
-
-function classifyRisk(score) {
-
-    if (score >= 70) {
-
-        return {
-            level: "HIGH RISK",
-            className: "high",
-            color: "#ff4545",
-            message:
-                "This advertisement contains multiple strong recruitment warning signs. Do not send money or sensitive information based solely on this advertisement. Independently verify the employer and recruitment agent."
-        };
-    }
-
-    if (score >= 35) {
-
-        return {
-            level: "SUSPICIOUS",
-            className: "suspicious",
-            color: "#f4c542",
-            message:
-                "This advertisement contains several warning signs. Proceed carefully and independently verify the employer, recruiter, payment requirements and contact details."
-        };
-    }
-
-    return {
-        level: "LOW RISK",
-        className: "low",
-        color: "#25d366",
-        message:
-            "No major warning pattern was detected by the current rules. This does not prove that the advertisement is genuine; independently verify the employer before applying."
-    };
-}
-
-/* =========================================================
-   SHOW RESULT
-   ========================================================= */
-
-function showAdvertisementResult(text) {
-
-    const cleanText =
-        normalizeText(text);
-
-    if (cleanText.length < 20) {
-
-        showBasicError(
-            "Please paste a complete job advertisement before verification."
+        showError(
+            "Please paste the complete job advertisement."
         );
 
         return;
     }
 
-    const analysis =
-        analyzeRules(cleanText);
 
-    const score =
-        calculateScore(
-            cleanText,
-            analysis.findings
-        );
-
-    const risk =
-        classifyRisk(score);
-
-    const phones =
-        extractPhones(cleanText);
-
-    const emails =
-        extractEmails(cleanText);
-
-    const urls =
-        extractURLs(cleanText);
-
-    const money =
-        extractMoney(cleanText);
-
-    const licences =
-        extractLicences(cleanText);
-
-    result.className =
-        "result " + risk.className;
-
-    result.classList.remove("hidden");
-
-    resultTitle.textContent =
-        risk.level;
-
-    scoreNumber.textContent =
-        score;
-
-    scoreCircle.style.setProperty(
-        "--score-color",
-        risk.color
+    loading(
+        "ANALYZING ADVERTISEMENT & MEA LICENCE..."
     );
 
-    scoreCircle.style.setProperty(
-        "--score-degree",
-        (score * 3.6) + "deg"
-    );
 
-    riskMessage.textContent =
-        risk.message;
+    try{
 
-    /* =====================================================
-       INDICATORS
-       ===================================================== */
+        const response =
+            await fetch(
+                "/api/check-advertisement",
+                {
+                    method:"POST",
 
-    indicators.innerHTML = "";
+                    headers:{
+                        "Content-Type":
+                            "application/json"
+                    },
 
-    if (analysis.findings.length === 0) {
-
-        indicators.innerHTML =
-            '<div class="indicator">' +
-                '<strong>✓ No major indicators detected</strong>' +
-                '<small>Continue with independent verification.</small>' +
-            '</div>';
-
-    } else {
-
-        analysis.findings.forEach(item => {
-
-            const div =
-                document.createElement("div");
-
-            div.className =
-                "indicator";
-
-            div.innerHTML =
-                "<strong>" +
-                escapeHTML(item.label) +
-                "</strong>" +
-                "<small>" +
-                escapeHTML(
-                    item.matches.join(", ")
-                ) +
-                "</small>";
-
-            indicators.appendChild(div);
-        });
-    }
-
-    /* =====================================================
-       DETECTED INFORMATION
-       ===================================================== */
-
-    detectedInfo.innerHTML = "";
-
-    addListItem(
-        detectedInfo,
-        "Detected language: " +
-        detectLanguage(cleanText)
-    );
-
-    addListItem(
-        detectedInfo,
-        "Advertisement length: " +
-        cleanText.length +
-        " characters"
-    );
-
-    if (phones.length) {
-
-        addListItem(
-            detectedInfo,
-            "Phone numbers: " +
-            phones.join(", ")
-        );
-    }
-
-    if (emails.length) {
-
-        addListItem(
-            detectedInfo,
-            "Email addresses: " +
-            emails.join(", ")
-        );
-    }
-
-    if (urls.length) {
-
-        addListItem(
-            detectedInfo,
-            "URLs: " +
-            urls.join(", ")
-        );
-    }
-
-    if (money.length) {
-
-        addListItem(
-            detectedInfo,
-            "Money amounts: " +
-            money.join(", ")
-        );
-    }
-
-    if (licences.length) {
-
-        addListItem(
-            detectedInfo,
-            "Licence / registration identifiers: " +
-            licences.join(", ")
-        );
-    } else {
-
-        addListItem(
-            detectedInfo,
-            "No clear MEA/Recruiting Agent licence number detected."
-        );
-    }
-
-    /* =====================================================
-       RISK REASONS
-       ===================================================== */
-
-    riskReasons.innerHTML = "";
-
-    if (analysis.findings.length === 0) {
-
-        addListItem(
-            riskReasons,
-            "No configured warning pattern matched."
-        );
-
-    } else {
-
-        analysis.findings.forEach(item => {
-
-            let reason =
-                item.label;
-
-            if (item.matches.length) {
-
-                reason +=
-                    " — detected: " +
-                    item.matches.slice(0, 4).join(", ");
-            }
-
-            addListItem(
-                riskReasons,
-                reason
+                    body:
+                        JSON.stringify({
+                            text:text
+                        })
+                }
             );
-        });
 
-        if (
-            analysis.findings.some(
-                item => item.key === "PAYMENT"
-            )
-        ) {
 
-            addListItem(
-                riskReasons,
-                "Never pay an upfront amount simply to obtain or continue a job."
+        const data =
+            await response.json();
+
+
+        if(!response.ok){
+
+            throw new Error(
+                data.error ||
+                "Advertisement analysis failed."
             );
         }
 
-        if (
-            analysis.findings.some(
-                item => item.key === "PERSONAL_DATA"
-            )
-        ) {
 
-            addListItem(
-                riskReasons,
-                "Do not share passwords, OTPs, banking credentials or unnecessary identity information."
-            );
-        }
+        showAdvertisementResult(data);
+
     }
 
-    result.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
+    catch(error){
+
+        showError(error.message);
+
+    }
+
+};
+
+
+/* =========================================================
+   AD RESULT
+========================================================= */
+
+function showAdvertisementResult(data){
+
+    const css =
+        data.riskScore >= 70
+            ? "danger"
+            : data.riskScore >= 35
+            ? "warn"
+            : "safe";
+
+
+    const textClass =
+        data.riskScore >= 70
+            ? "dangerText"
+            : data.riskScore >= 35
+            ? "warnText"
+            : "safeText";
+
+
+    const icon =
+        data.riskScore >= 70
+            ? "🚨"
+            : data.riskScore >= 35
+            ? "⚠️"
+            : "✅";
+
+
+    let indicators="";
+
+
+    data.indicators.forEach(item=>{
+
+        indicators += `
+
+            <div class="indicator ${item.level}">
+
+                ${item.icon}
+
+                ${escapeHTML(item.text)}
+
+            </div>
+
+        `;
+
     });
-}
 
-/* =========================================================
-   ADD LIST ITEM
-   ========================================================= */
 
-function addListItem(list, text) {
+    const licence =
+        data.meaLicence;
 
-    const li =
-        document.createElement("li");
 
-    li.textContent =
-        text;
+    let licenceHTML;
 
-    list.appendChild(li);
-}
 
-/* =========================================================
-   BASIC ERROR
-   ========================================================= */
+    if(!licence.found){
 
-function showBasicError(message) {
+        licenceHTML=`
+
+            <span class="dangerText">
+                NOT FOUND
+            </span>
+
+        `;
+
+    }
+
+    else{
+
+        licenceHTML=`
+
+            ${escapeHTML(licence.number)}
+
+            <br>
+
+            <span class="warnText">
+
+                ${escapeHTML(licence.status)}
+
+            </span>
+
+        `;
+    }
+
 
     result.className =
-        "result suspicious";
+        "result "+css;
 
-    result.classList.remove("hidden");
-
-    resultTitle.textContent =
-        "⚠ INPUT REQUIRED";
-
-    scoreNumber.textContent =
-        "—";
-
-    scoreCircle.style.setProperty(
-        "--score-color",
-        "#f4c542"
-    );
-
-    scoreCircle.style.setProperty(
-        "--score-degree",
-        "0deg"
-    );
-
-    riskMessage.textContent =
-        message;
-
-    indicators.innerHTML =
-        '<div class="indicator">' +
-            '<strong>Advertisement not analyzed</strong>' +
-            '<small>Paste more complete information and try again.</small>' +
-        '</div>';
-
-    detectedInfo.innerHTML = "";
-
-    addListItem(
-        detectedInfo,
-        "No advertisement was analyzed."
-    );
-
-    riskReasons.innerHTML = "";
-
-    addListItem(
-        riskReasons,
-        message
-    );
-
-    result.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
-}
-
-/* =========================================================
-   TABS
-   ========================================================= */
-
-function activateAdvertisementMode() {
-
-    adTab.classList.add("active");
-    websiteTab.classList.remove("active");
-
-    advertisementMode.style.display =
+    result.style.display =
         "block";
 
-    websiteMode.style.display =
-        "none";
 
-    result.classList.add("hidden");
+    result.innerHTML=`
+
+        <div class="status ${textClass}">
+
+            ${icon}
+
+            ${escapeHTML(data.verdict)}
+
+        </div>
+
+
+        <div class="score ${textClass}">
+
+            ${data.riskScore}/100
+
+        </div>
+
+
+        <div class="infoRow">
+
+            <div class="label">
+
+                Detected Language
+
+            </div>
+
+            <div class="value">
+
+                ${escapeHTML(data.language)}
+
+            </div>
+
+        </div>
+
+
+        <div class="infoRow">
+
+            <div class="label">
+
+                MEA / Recruiting Agent Licence
+
+            </div>
+
+            <div class="value">
+
+                ${licenceHTML}
+
+            </div>
+
+        </div>
+
+
+        <div class="infoRow">
+
+            <div class="label">
+
+                Risk Indicators
+
+            </div>
+
+            <div class="value">
+
+                ${indicators}
+
+            </div>
+
+        </div>
+
+
+        <div class="note">
+
+            A licence number appearing in an
+            advertisement is not by itself proof
+            that the recruiting agent is genuine.
+
+            <br><br>
+
+            Confirm the registration/status through
+            the official eMigrate system.
+
+        </div>
+
+
+        <div class="actions">
+
+            <a
+            class="emigrate"
+            href="https://emigrate.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+                🇮🇳 CHECK eMIGRATE
+
+            </a>
+
+
+            <a
+            class="mea"
+            href="https://www.mea.gov.in/ras.htm"
+            target="_blank"
+            rel="noopener noreferrer">
+
+                🇮🇳 MEA RAs
+
+            </a>
+
+        </div>
+
+    `;
 }
 
-function activateWebsiteMode() {
-
-    websiteTab.classList.add("active");
-    adTab.classList.remove("active");
-
-    advertisementMode.style.display =
-        "none";
-
-    websiteMode.style.display =
-        "block";
-
-    result.classList.add("hidden");
-}
 
 /* =========================================================
-   WEBSITE URL VALIDATION
-   ========================================================= */
+   WEBSITE
+========================================================= */
 
-function normalizeWebsiteURL(value) {
+websiteButton.onclick=async function(){
 
     let url =
-        String(value || "").trim();
+        websiteURL.value.trim();
 
-    if (!url) {
-        return null;
-    }
 
-    if (
-        !/^https?:\/\//i.test(url)
-    ) {
-        url =
-            "https://" + url;
-    }
+    if(!url){
 
-    try {
-
-        return new URL(url);
-
-    } catch {
-
-        return null;
-    }
-}
-
-/* =========================================================
-   WEBSITE LOCAL ANALYSIS
-   ========================================================= */
-
-function analyzeWebsiteURL(value) {
-
-    const url =
-        normalizeWebsiteURL(value);
-
-    if (!url) {
-
-        showBasicError(
-            "Please enter a valid website address."
+        showError(
+            "Please enter a website URL."
         );
 
         return;
     }
 
-    const hostname =
-        url.hostname.toLowerCase();
 
-    let score = 0;
+    if(!/^https?:\/\//i.test(url)){
 
-    const reasons = [];
+        url =
+            "https://"+url;
 
-    if (
-        url.protocol !== "https:"
-    ) {
-
-        score += 20;
-
-        reasons.push(
-            "The website does not use HTTPS."
-        );
     }
 
-    const suspiciousShorteners = [
 
-        "bit.ly",
-        "tinyurl.com",
-        "t.co",
-        "goo.gl",
-        "shorturl.at"
+    try{
 
-    ];
+        new URL(url);
 
-    if (
-        suspiciousShorteners.some(
-            domain =>
-                hostname === domain ||
-                hostname.endsWith("." + domain)
-        )
-    ) {
-
-        score += 20;
-
-        reasons.push(
-            "The URL uses a URL-shortening service."
-        );
     }
 
-    if (
-        hostname.includes("free") ||
-        hostname.includes("bonus") ||
-        hostname.includes("earn") ||
-        hostname.includes("job") &&
-        hostname.length > 35
-    ) {
+    catch{
 
-        score += 8;
-
-        reasons.push(
-            "The domain contains recruitment/earning-related terms."
+        showError(
+            "Invalid website URL."
         );
+
+        return;
     }
 
-    const risk =
-        classifyRisk(
-            Math.min(score, 100)
-        );
+
+    loading(
+        "SECURELY INSPECTING WEBSITE..."
+    );
+
+
+    try{
+
+        const response =
+            await fetch(
+                "/api/check-website",
+                {
+                    method:"POST",
+
+                    headers:{
+                        "Content-Type":
+                            "application/json"
+                    },
+
+                    body:
+                        JSON.stringify({
+                            url:url
+                        })
+                }
+            );
+
+
+        const data =
+            await response.json();
+
+
+        if(!response.ok){
+
+            throw new Error(
+                data.error ||
+                "Website inspection failed."
+            );
+        }
+
+
+        showWebsiteResult(data);
+
+    }
+
+    catch(error){
+
+        showError(error.message);
+
+    }
+
+};
+
+
+/* =========================================================
+   WEBSITE RESULT
+========================================================= */
+
+function showWebsiteResult(data){
+
+    const css =
+        data.riskScore >= 70
+            ? "danger"
+            : data.riskScore >= 35
+            ? "warn"
+            : "safe";
+
+
+    const textClass =
+        data.riskScore >= 70
+            ? "dangerText"
+            : data.riskScore >= 35
+            ? "warnText"
+            : "safeText";
+
+
+    const icon =
+        data.riskScore >= 70
+            ? "🚨"
+            : data.riskScore >= 35
+            ? "⚠️"
+            : "✅";
+
+
+    let indicators="";
+
+
+    data.indicators.forEach(item=>{
+
+        indicators += `
+
+            <div class="indicator ${item.level}">
+
+                ${item.icon}
+
+                ${escapeHTML(item.text)}
+
+            </div>
+
+        `;
+
+    });
+
 
     result.className =
-        "result " + risk.className;
+        "result "+css;
 
-    result.classList.remove("hidden");
+    result.style.display =
+        "block";
 
-    resultTitle.textContent =
-        risk.level;
 
-    scoreNumber.textContent =
-        Math.min(score, 100);
+    result.innerHTML=`
 
-    scoreCircle.style.setProperty(
-        "--score-color",
-        risk.color
-    );
+        <div class="status ${textClass}">
 
-    scoreCircle.style.setProperty(
-        "--score-degree",
-        (Math.min(score, 100) * 3.6) + "deg"
-    );
+            ${icon}
 
-    riskMessage.textContent =
-        "Basic URL analysis completed. Browser-side checks cannot prove that a website or employer is legitimate.";
+            ${escapeHTML(data.verdict)}
 
-    indicators.innerHTML = "";
+        </div>
 
-    const div =
-        document.createElement("div");
 
-    div.className =
-        "indicator";
+        <div class="score ${textClass}">
 
-    div.innerHTML =
-        "<strong>🌐 Domain</strong>" +
-        "<small>" +
-        escapeHTML(hostname) +
-        "</small>";
+            ${data.riskScore}/100
 
-    indicators.appendChild(div);
+        </div>
 
-    if (url.protocol === "https:") {
 
-        const secure =
-            document.createElement("div");
+        <div class="infoRow">
 
-        secure.className =
-            "indicator";
+            <div class="label">
 
-        secure.innerHTML =
-            "<strong>🔒 HTTPS</strong>" +
-            "<small>HTTPS is enabled. This protects the connection but does not prove the employer is genuine.</small>";
+                Website
 
-        indicators.appendChild(secure);
-    }
+            </div>
 
-    detectedInfo.innerHTML = "";
+            <div class="value">
 
-    addListItem(
-        detectedInfo,
-        "Protocol: " +
-        url.protocol
-    );
+                ${escapeHTML(data.url)}
 
-    addListItem(
-        detectedInfo,
-        "Hostname: " +
-        hostname
-    );
+            </div>
 
-    addListItem(
-        detectedInfo,
-        "Port: " +
-        (url.port || "default")
-    );
+        </div>
 
-    riskReasons.innerHTML = "";
 
-    if (!reasons.length) {
+        <div class="infoRow">
 
-        addListItem(
-            riskReasons,
-            "No configured URL warning pattern detected."
-        );
+            <div class="label">
 
-    } else {
+                Government Domain
 
-        reasons.forEach(reason => {
+            </div>
 
-            addListItem(
-                riskReasons,
-                reason
-            );
+            <div class="value">
 
-        });
-    }
+                ${data.governmentDomain
+                    ? "YES"
+                    : "NO"}
 
-    result.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
+            </div>
+
+        </div>
+
+
+        <div class="infoRow">
+
+            <div class="label">
+
+                Website Inspection
+
+            </div>
+
+            <div class="value">
+
+                ${escapeHTML(data.inspection)}
+
+                <br>
+
+                HTTP status:
+                ${escapeHTML(data.responseStatus)}
+
+            </div>
+
+        </div>
+
+
+        <div class="infoRow">
+
+            <div class="label">
+
+                Risk Indicators
+
+            </div>
+
+            <div class="value">
+
+                ${indicators}
+
+            </div>
+
+        </div>
+
+
+        <div class="note">
+
+            The target website was inspected by
+            the DruVictor-X backend rather than
+            directly loaded into this browser.
+
+            <br><br>
+
+            This is a risk assessment and is not
+            an antivirus guarantee.
+
+        </div>
+
+
+        <div class="actions">
+
+            <a
+            class="emigrate"
+            href="https://emigrate.gov.in/"
+            target="_blank"
+            rel="noopener noreferrer">
+
+                🇮🇳 eMIGRATE
+
+            </a>
+
+
+            <a
+            class="mea"
+            href="https://www.mea.gov.in/ras.htm"
+            target="_blank"
+            rel="noopener noreferrer">
+
+                🇮🇳 MEA RAs
+
+            </a>
+
+        </div>
+
+    `;
 }
-
-/* =========================================================
-   LANGUAGE UI
-   ========================================================= */
-
-function updateLanguage() {
-
-    const language =
-        languageSelector.value;
-
-    const data =
-        translations[language] ||
-        translations.en;
-
-    document.getElementById(
-        "subtitle"
-    ).textContent =
-        data.subtitle;
-
-    document.getElementById(
-        "adHeading"
-    ).textContent =
-        data.heading;
-
-    document.getElementById(
-        "adDescription"
-    ).textContent =
-        data.description;
-
-    advertisementText.placeholder =
-        data.placeholder;
-}
-
-/* =========================================================
-   EVENT LISTENERS
-   ========================================================= */
-
-adTab.addEventListener(
-    "click",
-    activateAdvertisementMode
-);
-
-websiteTab.addEventListener(
-    "click",
-    activateWebsiteMode
-);
-
-document.getElementById(
-    "verifyAdvertisement"
-).addEventListener(
-    "click",
-    function() {
-
-        try {
-
-            showAdvertisementResult(
-                advertisementText.value
-            );
-
-        } catch (error) {
-
-            console.error(
-                "Advertisement analysis error:",
-                error
-            );
-
-            showBasicError(
-                "The advertisement could not be analyzed. Please try again with the complete advertisement text."
-            );
-        }
-    }
-);
-
-document.getElementById(
-    "exampleButton"
-).addEventListener(
-    "click",
-    function() {
-
-        advertisementText.value =
-            TEST_AD;
-
-        showAdvertisementResult(
-            TEST_AD
-        );
-    }
-);
-
-document.getElementById(
-    "clearButton"
-).addEventListener(
-    "click",
-    function() {
-
-        advertisementText.value = "";
-
-        result.classList.add(
-            "hidden"
-        );
-
-        advertisementText.focus();
-    }
-);
-
-document.getElementById(
-    "verifyWebsite"
-).addEventListener(
-    "click",
-    function() {
-
-        try {
-
-            analyzeWebsiteURL(
-                websiteUrl.value
-            );
-
-        } catch (error) {
-
-            console.error(
-                "Website analysis error:",
-                error
-            );
-
-            showBasicError(
-                "The website URL could not be analyzed."
-            );
-        }
-    }
-);
-
-document.getElementById(
-    "openWebsite"
-).addEventListener(
-    "click",
-    function() {
-
-        const url =
-            normalizeWebsiteURL(
-                websiteUrl.value
-            );
-
-        if (!url) {
-
-            showBasicError(
-                "Enter a valid website URL first."
-            );
-
-            return;
-        }
-
-        window.open(
-            url.href,
-            "_blank",
-            "noopener,noreferrer"
-        );
-    }
-);
-
-document.getElementById(
-    "clearWebsite"
-).addEventListener(
-    "click",
-    function() {
-
-        websiteUrl.value = "";
-
-        result.classList.add(
-            "hidden"
-        );
-
-        websiteUrl.focus();
-    }
-);
-
-languageSelector.addEventListener(
-    "change",
-    updateLanguage
-);
-
-/* =========================================================
-   KEYBOARD SHORTCUT
-   Ctrl + Enter = Verify advertisement
-   ========================================================= */
-
-advertisementText.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (
-            event.ctrlKey &&
-            event.key === "Enter"
-        ) {
-
-            event.preventDefault();
-
-            showAdvertisementResult(
-                advertisementText.value
-            );
-        }
-    }
-);
-
-/* =========================================================
-   INITIALIZATION
-   ========================================================= */
-
-activateAdvertisementMode();
-updateLanguage();
-
-console.log(
-    "DruVictor-X Royal Verifier initialized successfully."
-);
 
 </script>
 
 </body>
+
 </html>
